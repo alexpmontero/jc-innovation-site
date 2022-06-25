@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/jc-innovation-site/static/css/main.573fd178.css",
+    "main.js": "/jc-innovation-site/static/js/main.355d80ba.js",
+    "static/js/787.688274fa.chunk.js": "/jc-innovation-site/static/js/787.688274fa.chunk.js",
+    "static/media/bg_home.jpg": "/jc-innovation-site/static/media/bg_home.8f94c06f160b4894fe00.jpg",
+    "index.html": "/jc-innovation-site/index.html",
+    "main.573fd178.css.map": "/jc-innovation-site/static/css/main.573fd178.css.map",
+    "main.355d80ba.js.map": "/jc-innovation-site/static/js/main.355d80ba.js.map",
+    "787.688274fa.chunk.js.map": "/jc-innovation-site/static/js/787.688274fa.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.573fd178.css",
+    "static/js/main.355d80ba.js"
+  ]
+}
