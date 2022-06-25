@@ -1,0 +1,27 @@
+.wrapper_exp_data{
+  border-top: 1px solid #666666;
+  border-bottom: 1px solid #666666;
+  margin: 6rem 0;
+  padding: 1.25rem 0;
+  .content_exp_data{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    .item_exp_data{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      .data_big{
+        font-size: 3.75rem;
+        font-weight: 900;
+        letter-spacing: -2px;
+      }
+      .data_text{
+        font-size: 1.15rem;
+        font-weight: 500;
+        max-width: 115px;
+        line-height: 1.1;
+      }
+    }
+  }
+}

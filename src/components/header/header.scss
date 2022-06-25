@@ -1,0 +1,90 @@
+.wrapper_header {
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  width: 100%;
+  .header_top {
+    .sec_top {
+      font-size: 0.8rem;
+      padding: 0.4rem 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      a {
+        color: #fff;
+        &:hover {
+          color: var(--primary_color);
+        }
+      }
+      .box_info_business {
+        display: flex;
+        color: #ffffff;
+        gap: 5px;
+      }
+      .box_social_networks {
+        color: #fff;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        i{
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+  .header_botton {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 0.5rem 0 0.65rem;
+    .sec_brand {
+      img {
+        max-height: 55px;
+      }
+    }
+    .sec_options {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .nav_options_item {
+        width: 100%;
+        font-size: 0.9rem;
+        ul {
+          margin: 0;
+          padding: 0;
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          li {
+            list-style: none;
+            .item_link {
+              color: #ffffff;
+              text-decoration: none;
+              font-weight: 500;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+  &.header_change {
+    background: #ffffff;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+    .box_info_business,
+    .box_social_networks,
+    .header_botton .sec_options .nav_options_item ul li .item_link,
+    a {
+      color: var(--color_black);
+    }
+    .btn.btn-brochure {
+      border: 1.5px solid var(--color_black);
+      color: var(--color_black);
+    }
+    .header_top {
+      background: var(--color_marin);
+    }
+  }
+}

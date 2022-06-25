@@ -1,0 +1,62 @@
+.wrapper_footer {
+  margin-top: 6rem;
+  .drawer_mnsj {
+    padding-top: 1rem;
+    padding-bottom: 2.25rem;
+  }
+  .drawer_footer {
+    .info_foot_msnj {
+      color: var(--color_marin);
+      background: #e9e9f1;
+      padding: 40px 110px 40px 65px;
+      .lgo {
+        margin-bottom: 10px;
+        img {
+          max-height: 80px;
+        }
+      }
+      .sec_links_socials {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .socials {
+          a {
+            font-size: 1.25rem;
+            margin-right: 0.75rem;
+            color: var(--color_marin);
+          }
+        }
+        .img_iso {
+          max-height: 60px;
+        }
+      }
+    }
+    .info_foot_contact {
+      padding: 40px 110px 40px 65px;
+      display: flex;
+      color: #ffffff;
+      background: var(--color_marin);
+      .mbtm {
+        margin-bottom: 3rem;
+        margin-top: 1.5rem;
+      }
+      .box_p_foot {
+        display: flex;
+        & > span {
+          padding-right: 0.75rem;
+        }
+        a {
+          color: #ffffff;
+          &:hover {
+            color: var(--primary_color);
+          }
+        }
+      }
+    }
+  }
+  .drawer_foot_pie {
+    background: var(--color_marin);
+    color: #ffffff;
+    padding: 0.25rem 0;
+  }
+}
