@@ -6,6 +6,18 @@ import Carousel, {
 import "@brainhubeu/react-carousel/lib/style.css";
 import "./upcomingEvents.scss";
 
+
+import itemUpcoming01 from '../../assets/imgs/upcoming-events/prox1.png'
+import itemUpcoming02 from '../../assets/imgs/upcoming-events/prox2.png'
+import itemUpcoming03 from '../../assets/imgs/upcoming-events/prox3.png'
+import itemUpcoming04 from '../../assets/imgs/upcoming-events/prox4.png'
+import itemUpcoming05 from '../../assets/imgs/upcoming-events/prox5.png'
+import itemUpcoming06 from '../../assets/imgs/upcoming-events/prox6.png'
+import itemUpcoming07 from '../../assets/imgs/upcoming-events/prox7.png'
+import itemUpcoming08 from '../../assets/imgs/upcoming-events/prox8.png'
+import itemUpcoming09 from '../../assets/imgs/upcoming-events/prox9.png'
+
+
 export const UpcomingEvents = () => {
   return (
     <div className="wrapper_upcoming text-center ">
@@ -41,55 +53,55 @@ export const UpcomingEvents = () => {
           >
             <div className="item_upcoming">
               <img
-                src="assets/imgs/upcoming-events/prox1.png"
+                src={itemUpcoming01}
                 alt="PRÓXIMOS EVENTOS JC INNOVATION"
               />
             </div>
             <div className="item_upcoming">
               <img
-                src="assets/imgs/upcoming-events/prox2.png"
+                src={itemUpcoming02}
                 alt="PRÓXIMOS EVENTOS JC INNOVATION"
               />
             </div>
             <div className="item_upcoming">
               <img
-                src="assets/imgs/upcoming-events/prox3.png"
+                src={itemUpcoming03}
                 alt="PRÓXIMOS EVENTOS JC INNOVATION"
               />
             </div>
             <div className="item_upcoming">
               <img
-                src="assets/imgs/upcoming-events/prox4.png"
+                src={itemUpcoming04}
                 alt="PRÓXIMOS EVENTOS JC INNOVATION"
               />
             </div>
             <div className="item_upcoming">
               <img
-                src="assets/imgs/upcoming-events/prox5.png"
+                src={itemUpcoming05}
                 alt="PRÓXIMOS EVENTOS JC INNOVATION"
               />
             </div>
             <div className="item_upcoming">
               <img
-                src="assets/imgs/upcoming-events/prox6.png"
+                src={itemUpcoming06}
                 alt="PRÓXIMOS EVENTOS JC INNOVATION"
               />
             </div>
             <div className="item_upcoming">
               <img
-                src="assets/imgs/upcoming-events/prox7.png"
+                src={itemUpcoming07}
                 alt="PRÓXIMOS EVENTOS JC INNOVATION"
               />
             </div>
             <div className="item_upcoming">
               <img
-                src="assets/imgs/upcoming-events/prox8.png"
+                src={itemUpcoming08}
                 alt="PRÓXIMOS EVENTOS JC INNOVATION"
               />
             </div>
             <div className="item_upcoming">
               <img
-                src="assets/imgs/upcoming-events/prox9.png"
+                src={itemUpcoming09}
                 alt="PRÓXIMOS EVENTOS JC INNOVATION"
               />
             </div>

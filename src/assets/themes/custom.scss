@@ -3,6 +3,7 @@
   --color_morado: #74337f;
   --color_marin: #222347;
   --color_black: #333333;
+  --color_bg_grey: #E9E9F1;
 }
 
 body {
@@ -17,6 +18,8 @@ body {
 
 a {
   text-decoration: none !important;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 .trans {
@@ -27,6 +30,15 @@ a {
 .c_primary{
   color: var(--primary_color);
 }
+.c_morado{
+  color: var(--color_morado);
+}
+
+.container_am {
+  max-width: 890px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
 
 .btn {
   font-weight: 500;
@@ -34,9 +46,8 @@ a {
   min-width: 150px;
   border-radius: 0.6rem !important;
   font-size: 0.9rem;
-  .bi {
-    font-size: 1rem;
-  }
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
   span {
     padding: 0 0.15rem;
   }
@@ -49,6 +60,7 @@ a {
       rgba(123, 52, 131, 1) 100%
     );
     color: #ffffff;
+    padding-top: 0.7rem;
   }
   &.btn-brochure {
     border: 1.5px solid #ffffff;
@@ -58,6 +70,9 @@ a {
       color: #333333;
       background: #ffffff;
     }
+    .fa-solid{
+      font-size: 1.1rem;
+    }
     span {
       display: inline-block;
       vertical-align: middle;
@@ -67,25 +82,26 @@ a {
       font-size: 0.8rem;
       padding-left: 0.5rem;
     }
-  }
-  &.btn-brochure-color {
-    border: 1.5px solid var(--color_black);
-    color: var(--color_black);
-    &:hover {
+    &.in-color {
       border: 1.5px solid var(--color_black);
-      color: #333333;
-      background: #ffffff;
-    }
-    span {
-      display: inline-block;
-      vertical-align: middle;
-      max-width: 90px;
-      text-align: left;
-      line-height: 1.15;
-      font-size: 0.8rem;
-      padding-left: 0.5rem;
+      color: var(--color_black);
+      &:hover {
+        border: 1.5px solid var(--color_black);
+        color: #333333;
+        background: #ffffff;
+      }
+      span {
+        display: inline-block;
+        vertical-align: middle;
+        max-width: 90px;
+        text-align: left;
+        line-height: 1.15;
+        font-size: 0.8rem;
+        padding-left: 0.5rem;
+      }
     }
   }
+
 }
 
 .ttls {
@@ -146,6 +162,9 @@ a {
   }
 }
 
+.fw_300 {
+  font-weight: 300;
+}
 .fw_400 {
   font-weight: 400;
 }

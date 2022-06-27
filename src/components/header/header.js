@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { BtnDownload } from "../btnDownload";
+
+import LogoOficial from "../../assets/imgs/logo-jc.png";
 
 import "./header.scss";
 
@@ -45,7 +48,7 @@ export const Header = () => {
                 rel="nofollow noopener noreferrer"
                 href="https://www.instagram.com/jcinnovationoficial/"
               >
-               <i className="fa-brands fa-instagram"></i>
+                <i className="fa-brands fa-instagram"></i>
               </a>
               <a
                 target="_blank"
@@ -80,7 +83,7 @@ export const Header = () => {
           <div className="sec_brand">
             <img
               className="logo_brand"
-              src="assets/imgs/logo-jc.png"
+              src={LogoOficial}
               alt="JC Innovations"
             />
           </div>
@@ -98,9 +101,9 @@ export const Header = () => {
                   </Link>
                 </li>
                 <li>
-                  <span className="item_link">
-                    SERVICIOS
-                    <span>
+                  <span className="item_link link_dropdown">
+                    <span>SERVICIOS</span>
+                    <span className="ml-2">
                       <i className="fa-solid fa-angle-down"></i>
                     </span>
                   </span>
@@ -108,16 +111,14 @@ export const Header = () => {
               </ul>
             </nav>
             <div className="box_options_btns">
-              <button type="button" className="btn btn-brochure">
-                <i className="bi bi-download"></i>
-                <span>BROCHUR DE SERVICIOS</span>
-              </button>
-              <button type="button" className="btn btn-primary ">
+              <BtnDownload/>
+
+              <Link to="/contacto" className="btn btn-primary ">
                 <span>
                   <i className="bi bi-telephone-fill"></i>
                 </span>
                 <span>¡HABLEMOS!</span>
-              </button>
+              </Link>
             </div>
           </div>
         </div>

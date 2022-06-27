@@ -3,6 +3,7 @@ import { ExperienceData } from "../components/experienceData/experienceData";
 import { CarouselHome } from "../components/carouselHome/carouselHome";
 import { SubservicesTabs } from "../components/subservicesTabs/subservicesTabs";
 import { UpcomingEvents } from "../components/upcomingEvents/upcomingEvents";
+import { BtnDownload } from "../components/btnDownload";
 
 export const HomePage = () => {
   return (
@@ -112,10 +113,7 @@ export const HomePage = () => {
                 </div>
                 <div className="col-md-4">
                   <div className="box_options_btns">
-                    <button type="button" className="btn btn-brochure-color">
-                      <i className="bi bi-download"></i>
-                      <span>BROCHUR DE SERVICIOS</span>
-                    </button>
+                    <BtnDownload colors="in-color" />
                     <button type="button" className="btn btn-primary ">
                       <span>
                         <i className="bi bi-telephone-fill"></i>

@@ -1,5 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import {BtnDownload} from '../btnDownload'
+
 import "./footer.scss";
+
+import LogoOficial from "../../assets/imgs/logo-jc.png";
+import LogoIso from "../../assets/imgs/ISO.png";
 
 export const Footer = () => {
   const anioActual = () => {
@@ -24,16 +30,14 @@ export const Footer = () => {
               </div>
               <div className="col-md-4">
                 <div className="box_options_btns">
-                  <button type="button" className="btn btn-brochure-color">
-                    <i className="bi bi-download"></i>
-                    <span>BROCHUR DE SERVICIOS</span>
-                  </button>
-                  <button type="button" className="btn btn-primary ">
+                  <BtnDownload colors="in-color" />
+
+                  <Link to='/contacto' className="btn btn-primary ">
                     <span>
                       <i className="bi bi-telephone-fill"></i>
                     </span>
                     <span>¡HABLEMOS!</span>
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -46,7 +50,7 @@ export const Footer = () => {
             <div className="col-md-6 info_foot_msnj">
               <div className="">
                 <div className="lgo">
-                  <img src="assets/imgs/logo-jc.png" alt="JC Innovation" />
+                  <img src={LogoOficial} alt="JC Innovation" />
                 </div>
                 <h2 className="mt-1">
                   Únase a nosotros hoy y permítanos ayudarlo a unir personas.
@@ -94,11 +98,7 @@ export const Footer = () => {
                       <i className="fa-brands fa-youtube"></i>
                     </a>
                   </div>
-                  <img
-                    className="img_iso"
-                    src="assets/imgs/ISO.png"
-                    alt="ISO Certified"
-                  />
+                  <img className="img_iso" src={LogoIso} alt="ISO Certified" />
                 </div>
               </div>
             </div>
@@ -111,7 +111,9 @@ export const Footer = () => {
                 </p>
                 <hr />
                 <p className="box_p_foot paragraph sm">
-                  <span>{/* <FontAwesomeIcon icon={faPhone} /> */}</span>
+                  <span>
+                    <i className="fa-solid fa-phone"></i>
+                  </span>
                   <div>
                     <a href="tel:+5562345558">(556) 234 5558 /</a>
                     <a href="tel:+5589037597">(558) 903 7597</a>
@@ -119,7 +121,9 @@ export const Footer = () => {
                 </p>
                 <hr />
                 <p className="box_p_foot paragraph sm">
-                  <span>{/* <FontAwesomeIcon icon={faEnvelope} /> */}</span>
+                  <span>
+                    <i class="fa-regular fa-envelope"></i>
+                  </span>
                   <a href="mailto:Jcinnovations@correo.com">
                     Jcinnovations@correo.com
                   </a>

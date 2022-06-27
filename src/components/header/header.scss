@@ -65,6 +65,11 @@
               font-weight: 500;
               cursor: pointer;
             }
+            .item_link.link_dropdown {
+             display: flex;
+             align-items: center;
+             gap: 5px;
+            }
           }
         }
       }
@@ -82,6 +87,9 @@
     .btn.btn-brochure {
       border: 1.5px solid var(--color_black);
       color: var(--color_black);
+    }
+    .btn.btn-primary {
+      color: #fff;
     }
     .header_top {
       background: var(--color_marin);
