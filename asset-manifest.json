@@ -1,16 +1,32 @@
 {
   "files": {
-    "main.css": "/jc-innovation-site/static/css/main.573fd178.css",
-    "main.js": "/jc-innovation-site/static/js/main.355d80ba.js",
+    "main.css": "/jc-innovation-site/static/css/main.18e900d4.css",
+    "main.js": "/jc-innovation-site/static/js/main.80360948.js",
     "static/js/787.688274fa.chunk.js": "/jc-innovation-site/static/js/787.688274fa.chunk.js",
+    "static/media/prox4.png": "/jc-innovation-site/static/media/prox4.112ace1e4e39081157c5.png",
+    "static/media/ISO.png": "/jc-innovation-site/static/media/ISO.062b9a0517d2ad34c731.png",
+    "static/media/prox5.png": "/jc-innovation-site/static/media/prox5.ca620b4240f5c358b3c7.png",
+    "static/media/prox9.png": "/jc-innovation-site/static/media/prox9.74cdfa73d9122ecadd19.png",
+    "static/media/prox7.png": "/jc-innovation-site/static/media/prox7.37a46b92b64d5bde8144.png",
+    "static/media/prox8.png": "/jc-innovation-site/static/media/prox8.3b6b55df1c2868b2ff58.png",
+    "static/media/prox2.png": "/jc-innovation-site/static/media/prox2.30e5130e6c39388e0405.png",
+    "static/media/prox6.png": "/jc-innovation-site/static/media/prox6.c69edecc9d5095390d64.png",
+    "static/media/prox1.png": "/jc-innovation-site/static/media/prox1.241954642729d9724f2e.png",
+    "static/media/bg_contact.jpg": "/jc-innovation-site/static/media/bg_contact.3b7df75859b24b9b8a91.jpg",
     "static/media/bg_home.jpg": "/jc-innovation-site/static/media/bg_home.8f94c06f160b4894fe00.jpg",
+    "static/media/prox3.png": "/jc-innovation-site/static/media/prox3.3b2d7ca065f2f4786b5f.png",
+    "static/media/omar-espinoza.png": "/jc-innovation-site/static/media/omar-espinoza.984af173eaf3ce2f11e0.png",
+    "static/media/jessica-becerra.png": "/jc-innovation-site/static/media/jessica-becerra.276dbc9e4cbb9cc06c22.png",
+    "static/media/jesus-cuevas.png": "/jc-innovation-site/static/media/jesus-cuevas.30fb1868e625154a37fa.png",
+    "static/media/ulises-martinez.png": "/jc-innovation-site/static/media/ulises-martinez.9162111f664c73f9e00f.png",
+    "static/media/kevin-marquez.png": "/jc-innovation-site/static/media/kevin-marquez.b5754b477d96808aae99.png",
     "index.html": "/jc-innovation-site/index.html",
-    "main.573fd178.css.map": "/jc-innovation-site/static/css/main.573fd178.css.map",
-    "main.355d80ba.js.map": "/jc-innovation-site/static/js/main.355d80ba.js.map",
+    "main.18e900d4.css.map": "/jc-innovation-site/static/css/main.18e900d4.css.map",
+    "main.80360948.js.map": "/jc-innovation-site/static/js/main.80360948.js.map",
     "787.688274fa.chunk.js.map": "/jc-innovation-site/static/js/787.688274fa.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.573fd178.css",
-    "static/js/main.355d80ba.js"
+    "static/css/main.18e900d4.css",
+    "static/js/main.80360948.js"
   ]
 }
