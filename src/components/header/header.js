@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { BtnDownload } from "../btnDownload";
-
+import {
+  Dropdown,
+  DropdownToggle,
+  DropdownMenu,
+} from "reactstrap";
 import LogoOficial from "../../assets/imgs/logo-jc.png";
 
 import "./header.scss";
@@ -17,6 +21,9 @@ export const Header = () => {
     updateScroll();
     window.addEventListener("scroll", updateScroll);
   });
+
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const toggle = () => setDropdownOpen((prevState) => !prevState);
 
   return (
     <header
@@ -101,18 +108,235 @@ export const Header = () => {
                   </Link>
                 </li>
                 <li>
-                  <span className="item_link link_dropdown">
-                    <span>SERVICIOS</span>
-                    <span className="ml-2">
-                      <i className="fa-solid fa-angle-down"></i>
-                    </span>
-                  </span>
+                  <Dropdown isOpen={dropdownOpen} toggle={toggle}>
+                    <DropdownToggle
+                      tag="span"
+                      data-toggle="dropdown"
+                      aria-expanded={dropdownOpen}
+                      className="item_link"
+                    >
+                      SERVICIOS
+                    </DropdownToggle>
+                    <DropdownMenu>
+                      <div className="header_subnav">
+                        <div className="container-lg">
+                          <div className="content_subheader">
+                            <div className="row_subheader">
+                              <div className="sec_info_subheader">
+                                <h4 className="mb-3">JC Innovation</h4>
+                                <p className="paragraph">
+                                  Damos a cada proyecto su propia identidad con
+                                  la ayuda de expertos en el área, creando la
+                                  mejor combinación en creatividad y tecnología.
+                                </p>
+                                <div className="mt-5">
+                                  <Link
+                                    to="/contacto"
+                                    className="fw_500 c_primary"
+                                  >
+                                    <h5>Contácta un asesor</h5>
+                                  </Link>
+                                </div>
+                              </div>
+                              <nav className="sec_nav_subheader">
+                                <Link
+                                  to="/nosotros"
+                                  className="box_item_link_service"
+                                  onClick={toggle}
+                                >
+                                  <h6 className="name_link_head trans">
+                                    Organización de congresos Y eventos
+                                  </h6>
+                                  <hr />
+                                  <div>
+                                    <p className="paragraph">
+                                      Creamos soluciones digitales para eventos
+                                    </p>
+                                    <ul>
+                                      <li>_ Presenciales</li>
+                                      <li>_ Virtuales</li>
+                                      <li>_ Híbridos</li>
+                                    </ul>
+                                  </div>
+                                </Link>
+                                <Link
+                                  to="/contacto"
+                                  className="box_item_link_service"
+                                  onClick={toggle}
+                                >
+                                  <h6 className="name_link_head trans">
+                                    Streaming
+                                  </h6>
+                                  <hr />
+                                  <div>
+                                    <p className="paragraph">
+                                      Hacemos transmisiones en vivo para tu
+                                      evento virtual o presencial
+                                    </p>
+                                  </div>
+                                </Link>
+                                <Link
+                                  to="/"
+                                  className="box_item_link_service"
+                                  onClick={toggle}
+                                >
+                                  <h6 className="name_link_head trans">
+                                    Desarrollo de software
+                                  </h6>
+                                  <hr />
+                                  <div>
+                                    <p className="paragraph">
+                                      Creamos plataformas de sistemas de socios,
+                                      facturación & e-learnings, a la medida de
+                                      tus necesidades
+                                    </p>
+                                  </div>
+                                </Link>
+                                <Link
+                                  to="/"
+                                  className="box_item_link_service"
+                                  onClick={toggle}
+                                >
+                                  <h6 className="name_link_head trans">
+                                    Marketing y Diseño Gráfico
+                                  </h6>
+                                  <hr />
+                                  <div>
+                                    <p className="paragraph">
+                                      Generamos estrategias en redes sociales
+                                      para aumentar la presencia digital de tu
+                                      marca, evento o campaña
+                                    </p>
+                                  </div>
+                                </Link>
+                                <Link
+                                  to="/"
+                                  className="box_item_link_service"
+                                  onClick={toggle}
+                                >
+                                  <h6 className="name_link_head trans">
+                                    Podcast
+                                  </h6>
+                                  <hr />
+                                  <div>
+                                    <p className="paragraph">
+                                      Producimos nuevos productos auditivos e
+                                      inmersivos con altos estándares de calidad
+                                    </p>
+                                  </div>
+                                </Link>
+                              </nav>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </DropdownMenu>
+                  </Dropdown>
+
+                  {/* <Dropdown isOpen={dropdownOpen} toggle={toggle}>
+                    <DropdownToggle caret>SERVICIOS</DropdownToggle>
+                    <DropdownMenu>
+                      <div className="header_subnav">
+                        <div className="container-lg">
+                          <div className="content_subheader">
+                            <div className="row_subheader">
+                              <div className="sec_info_subheader">
+                                <h4 className="mb-3">JC Innovation</h4>
+                                <p className="paragraph">
+                                  Damos a cada proyecto su propia identidad con
+                                  la ayuda de expertos en el área, creando la
+                                  mejor combinación en creatividad y tecnología.
+                                </p>
+                                <div className="mt-5">
+                                  <Link
+                                    to="/contacto"
+                                    className="fw_500 c_primary"
+                                  >
+                                    <h5>Contácta un asesor</h5>
+                                  
+                                  </Link>
+                                  <DropdownItem>Header</DropdownItem>
+                                </div>
+                              </div>
+                              <nav className="sec_nav_subheader">
+                                <Link to="/" className="box_item_link_service">
+                                  <h6 className="name_link_head trans">
+                                    Organización de congresos Y eventos
+                                  </h6>
+                                  <hr />
+                                  <div>
+                                    <p className="paragraph">
+                                      Creamos soluciones digitales para eventos
+                                    </p>
+                                    <ul>
+                                      <li>_ Presenciales</li>
+                                      <li>_ Virtuales</li>
+                                      <li>_ Híbridos</li>
+                                    </ul>
+                                  </div>
+                                </Link>
+                                <Link to="/" className="box_item_link_service">
+                                  <h6 className="name_link_head trans">
+                                    Streaming
+                                  </h6>
+                                  <hr />
+                                  <div>
+                                    <p className="paragraph">
+                                      Hacemos transmisiones en vivo para tu
+                                      evento virtual o presencial
+                                    </p>
+                                  </div>
+                                </Link>
+                                <Link to="/" className="box_item_link_service">
+                                  <h6 className="name_link_head trans">
+                                    Desarrollo de software
+                                  </h6>
+                                  <hr />
+                                  <div>
+                                    <p className="paragraph">
+                                      Creamos plataformas de sistemas de socios,
+                                      facturación & e-learnings, a la medida de
+                                      tus necesidades
+                                    </p>
+                                  </div>
+                                </Link>
+                                <Link to="/" className="box_item_link_service">
+                                  <h6 className="name_link_head trans">
+                                    Marketing y Diseño Gráfico
+                                  </h6>
+                                  <hr />
+                                  <div>
+                                    <p className="paragraph">
+                                      Generamos estrategias en redes sociales
+                                      para aumentar la presencia digital de tu
+                                      marca, evento o campaña
+                                    </p>
+                                  </div>
+                                </Link>
+                                <Link to="/" className="box_item_link_service">
+                                  <h6 className="name_link_head trans">
+                                    Podcast
+                                  </h6>
+                                  <hr />
+                                  <div>
+                                    <p className="paragraph">
+                                      Producimos nuevos productos auditivos e
+                                      inmersivos con altos estándares de calidad
+                                    </p>
+                                  </div>
+                                </Link>
+                              </nav>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </DropdownMenu>
+                  </Dropdown> */}
                 </li>
               </ul>
             </nav>
             <div className="box_options_btns">
-              <BtnDownload/>
-
+              <BtnDownload />
               <Link to="/contacto" className="btn btn-primary ">
                 <span>
                   <i className="bi bi-telephone-fill"></i>
@@ -123,6 +347,7 @@ export const Header = () => {
           </div>
         </div>
       </div>
+      {/*  */}
     </header>
   );
 };
