@@ -1,11 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { BtnDownload } from "../btnDownload";
-import {
-  Dropdown,
-  DropdownToggle,
-  DropdownMenu,
-} from "reactstrap";
+import { Dropdown, DropdownToggle, DropdownMenu } from "reactstrap";
 import LogoOficial from "../../assets/imgs/logo-jc.png";
 
 import "./header.scss";
@@ -35,7 +31,7 @@ export const Header = () => {
         <div className="container-lg">
           <div className="sec_top">
             <div className="box_info_business">
-              <i className="bi bi-telephone-fill"></i>
+              <i className="fa-solid fa-phone pt-1"></i>
               <a href="tel:+5562345558">(556) 234 5558 /</a>
               <a href="tel:+5589037597">(558) 903 7597</a>
             </div>
@@ -110,6 +106,7 @@ export const Header = () => {
                 <li>
                   <Dropdown isOpen={dropdownOpen} toggle={toggle}>
                     <DropdownToggle
+                      caret
                       tag="span"
                       data-toggle="dropdown"
                       aria-expanded={dropdownOpen}
@@ -140,11 +137,11 @@ export const Header = () => {
                               </div>
                               <nav className="sec_nav_subheader">
                                 <Link
-                                  to="/nosotros"
+                                  to="/organizacion-congresos-eventos"
                                   className="box_item_link_service"
                                   onClick={toggle}
                                 >
-                                  <h6 className="name_link_head trans">
+                                  <h6 className="name_link_head ">
                                     Organización de congresos Y eventos
                                   </h6>
                                   <hr />
@@ -160,13 +157,11 @@ export const Header = () => {
                                   </div>
                                 </Link>
                                 <Link
-                                  to="/contacto"
+                                  to="/streaming"
                                   className="box_item_link_service"
                                   onClick={toggle}
                                 >
-                                  <h6 className="name_link_head trans">
-                                    Streaming
-                                  </h6>
+                                  <h6 className="name_link_head ">Streaming</h6>
                                   <hr />
                                   <div>
                                     <p className="paragraph">
@@ -176,11 +171,11 @@ export const Header = () => {
                                   </div>
                                 </Link>
                                 <Link
-                                  to="/"
+                                  to="/desarrollo-software"
                                   className="box_item_link_service"
                                   onClick={toggle}
                                 >
-                                  <h6 className="name_link_head trans">
+                                  <h6 className="name_link_head ">
                                     Desarrollo de software
                                   </h6>
                                   <hr />
@@ -193,11 +188,11 @@ export const Header = () => {
                                   </div>
                                 </Link>
                                 <Link
-                                  to="/"
+                                  to="/marketing-y-diseno"
                                   className="box_item_link_service"
                                   onClick={toggle}
                                 >
-                                  <h6 className="name_link_head trans">
+                                  <h6 className="name_link_head ">
                                     Marketing y Diseño Gráfico
                                   </h6>
                                   <hr />
@@ -210,13 +205,11 @@ export const Header = () => {
                                   </div>
                                 </Link>
                                 <Link
-                                  to="/"
+                                  to="/podcast"
                                   className="box_item_link_service"
                                   onClick={toggle}
                                 >
-                                  <h6 className="name_link_head trans">
-                                    Podcast
-                                  </h6>
+                                  <h6 className="name_link_head ">Podcast</h6>
                                   <hr />
                                   <div>
                                     <p className="paragraph">
@@ -232,106 +225,6 @@ export const Header = () => {
                       </div>
                     </DropdownMenu>
                   </Dropdown>
-
-                  {/* <Dropdown isOpen={dropdownOpen} toggle={toggle}>
-                    <DropdownToggle caret>SERVICIOS</DropdownToggle>
-                    <DropdownMenu>
-                      <div className="header_subnav">
-                        <div className="container-lg">
-                          <div className="content_subheader">
-                            <div className="row_subheader">
-                              <div className="sec_info_subheader">
-                                <h4 className="mb-3">JC Innovation</h4>
-                                <p className="paragraph">
-                                  Damos a cada proyecto su propia identidad con
-                                  la ayuda de expertos en el área, creando la
-                                  mejor combinación en creatividad y tecnología.
-                                </p>
-                                <div className="mt-5">
-                                  <Link
-                                    to="/contacto"
-                                    className="fw_500 c_primary"
-                                  >
-                                    <h5>Contácta un asesor</h5>
-                                  
-                                  </Link>
-                                  <DropdownItem>Header</DropdownItem>
-                                </div>
-                              </div>
-                              <nav className="sec_nav_subheader">
-                                <Link to="/" className="box_item_link_service">
-                                  <h6 className="name_link_head trans">
-                                    Organización de congresos Y eventos
-                                  </h6>
-                                  <hr />
-                                  <div>
-                                    <p className="paragraph">
-                                      Creamos soluciones digitales para eventos
-                                    </p>
-                                    <ul>
-                                      <li>_ Presenciales</li>
-                                      <li>_ Virtuales</li>
-                                      <li>_ Híbridos</li>
-                                    </ul>
-                                  </div>
-                                </Link>
-                                <Link to="/" className="box_item_link_service">
-                                  <h6 className="name_link_head trans">
-                                    Streaming
-                                  </h6>
-                                  <hr />
-                                  <div>
-                                    <p className="paragraph">
-                                      Hacemos transmisiones en vivo para tu
-                                      evento virtual o presencial
-                                    </p>
-                                  </div>
-                                </Link>
-                                <Link to="/" className="box_item_link_service">
-                                  <h6 className="name_link_head trans">
-                                    Desarrollo de software
-                                  </h6>
-                                  <hr />
-                                  <div>
-                                    <p className="paragraph">
-                                      Creamos plataformas de sistemas de socios,
-                                      facturación & e-learnings, a la medida de
-                                      tus necesidades
-                                    </p>
-                                  </div>
-                                </Link>
-                                <Link to="/" className="box_item_link_service">
-                                  <h6 className="name_link_head trans">
-                                    Marketing y Diseño Gráfico
-                                  </h6>
-                                  <hr />
-                                  <div>
-                                    <p className="paragraph">
-                                      Generamos estrategias en redes sociales
-                                      para aumentar la presencia digital de tu
-                                      marca, evento o campaña
-                                    </p>
-                                  </div>
-                                </Link>
-                                <Link to="/" className="box_item_link_service">
-                                  <h6 className="name_link_head trans">
-                                    Podcast
-                                  </h6>
-                                  <hr />
-                                  <div>
-                                    <p className="paragraph">
-                                      Producimos nuevos productos auditivos e
-                                      inmersivos con altos estándares de calidad
-                                    </p>
-                                  </div>
-                                </Link>
-                              </nav>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </DropdownMenu>
-                  </Dropdown> */}
                 </li>
               </ul>
             </nav>
@@ -339,7 +232,7 @@ export const Header = () => {
               <BtnDownload />
               <Link to="/contacto" className="btn btn-primary ">
                 <span>
-                  <i className="bi bi-telephone-fill"></i>
+                  <i className="fa-solid fa-phone"></i>
                 </span>
                 <span>¡HABLEMOS!</span>
               </Link>

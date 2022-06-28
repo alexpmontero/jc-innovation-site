@@ -7,20 +7,20 @@ import {ItemTeams} from "../components/itemTeams/itemTeams";
 
 export const AboutPage = () => {
   const settings = {
-    dots: false,
-    arrows: false,
-    infinite: true,
-    slidesToShow: 1,
+    arrows:false,
+    dots: true,
     fade: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    speed: 1000,
     autoplaySpeed: 1000,
   };
   return (
     <>
       <Helmet>
-        <title>Nosotros - JC Innovation</title>
+        <title>Organización de congresos y eventos - JC Innovation</title>
       </Helmet>
       <section className="wrapper_page_about">
         <div className="contain_head_about">
@@ -39,10 +39,7 @@ export const AboutPage = () => {
               </p>
               <div className="text-center">
                 <Link to="/contacto" className="btn btn-primary mt-4">
-                  <span>
-                    <i className="bi bi-telephone-fill"></i>
-                  </span>
-                  <span>HABLA CON NUESTROS EXPERTOS</span>
+                  HABLA CON NUESTROS EXPERTOS
                 </Link>
               </div>
             </div>
@@ -84,6 +81,7 @@ export const AboutPage = () => {
                 <div className="item__slide_about iii"></div>
                 <div className="item__slide_about iv"></div>
                 <div className="item__slide_about v"></div>
+                <div className="item__slide_about vi"></div>
               </Slider>
             </div>
           </div>
@@ -116,12 +114,9 @@ export const AboutPage = () => {
                 </div>
               </div>
               <div className="col-md-12 text-center mt-5">
-                <button type="button" className="btn btn-primary ">
-                  <span>
-                    <i className="bi bi-telephone-fill"></i>
-                  </span>
-                  <span>¡HABLEMOS!</span>
-                </button>
+              <Link to="/contacto" className="btn btn-primary mt-4">
+                  HABLA CON NUESTROS EXPERTOS
+                </Link>
               </div>
             </div>
           </div>

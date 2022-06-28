@@ -56,7 +56,7 @@ export const ItemTeams = () => {
               </div>
               <div className="text-center">
                 <h6 className="c_morado fw_400">{itemTeam.position}</h6>
-                <h4 className="fw_500 mb-3">{itemTeam.name}</h4>
+                <h4 className="fw_600 mb-3">{itemTeam.name}</h4>
                 <p className="paragraph sm">
                   <a href={`mailto:${itemTeam.email}`}>
                     <span>

@@ -1,0 +1,23 @@
+.wrapper_head_page {
+  color: #ffffff;
+  background: var(--color_marin);
+  height: 75vh;
+  min-height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 1rem;
+  .container_am{
+    max-width: 750px;
+  }
+  .sec_head {
+    .ttl_thin {
+      span::after,
+      span::before {
+        content: "";
+        background: var(--primary_color);
+      }
+    }
+  }
+}

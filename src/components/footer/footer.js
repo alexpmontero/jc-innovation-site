@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import {BtnDownload} from '../btnDownload'
+import { BtnDownload } from "../btnDownload";
 
 import "./footer.scss";
 
@@ -32,9 +32,9 @@ export const Footer = () => {
                 <div className="box_options_btns">
                   <BtnDownload colors="in-color" />
 
-                  <Link to='/contacto' className="btn btn-primary ">
+                  <Link to="/contacto" className="btn btn-primary ">
                     <span>
-                      <i className="bi bi-telephone-fill"></i>
+                      <i className="fa-solid fa-phone pt-1"></i>
                     </span>
                     <span>¡HABLEMOS!</span>
                   </Link>

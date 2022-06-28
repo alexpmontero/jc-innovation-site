@@ -1,0 +1,3 @@
+"homepage": "https://alexpmontero.github.io/jc-innovation-site",
+
+--> in package.json
