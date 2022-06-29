@@ -36,12 +36,13 @@
   .header_botton {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 15px;
     padding: 0.5rem 0 0.65rem;
     .sec_brand {
       img {
         max-height: 55px;
       }
+      min-width: 70px;
     }
     .sec_options {
       width: 100%;
@@ -99,7 +100,22 @@
     padding: 1rem;
     padding-bottom: 2rem;
     border-top: 2px solid #efefef;
+    box-shadow: 0 3px 18px rgba(0, 0, 0, 0.15);
     .content_subheader {
+      position: relative;
+      .box_go_back {
+        display: none;
+        padding: 0.35rem 0.5rem;
+        border-radius: 0.3rem;
+        font-size: 0.8rem;
+        position: absolute;
+        right: 0;
+        top: 0;
+        cursor: pointer;
+        &:hover {
+          background: #dedede;
+        }
+      }
       .row_subheader {
         display: flex;
         justify-content: space-between;
@@ -120,10 +136,10 @@
             border-radius: 10px;
             &:hover {
               background: #e9e9ef;
-              .name_link_head{
+              .name_link_head {
                 color: var(--primary_color);
               }
-              .paragraph{
+              .paragraph {
                 color: var(--color_marin);
               }
             }
@@ -142,6 +158,9 @@
                 list-style: none;
               }
             }
+            .fa-solid {
+              font-size: 1.15rem;
+            }
           }
         }
       }
@@ -149,7 +168,7 @@
   }
 
   .nav_options_item {
-    .dropdown-menu.show{
+    .dropdown-menu.show {
       position: fixed !important;
       top: 103px !important;
       left: 0;
@@ -158,6 +177,30 @@
       border-radius: 0;
       padding: 0;
       border: 0 !important;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper_header {
+    .nav_options_item {
+      .dropdown-menu.show {
+        top: 0 !important;
+        height: 100%;
+        .header_subnav {
+          padding: 1rem 0.5rem;
+          height: 100%;
+          overflow: auto;
+          .name_link_head {
+            color: var(--primary_color);
+          }
+          .content_subheader .box_go_back {
+            display: block;
+            right: 0;
+            top: 0;
+          }
+        }
+      }
     }
   }
 }

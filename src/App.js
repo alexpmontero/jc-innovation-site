@@ -5,7 +5,6 @@ import "./assets/themes/main.scss";
 
 import { Header } from "./components/header/header";
 import { Footer } from "./components/footer/footer";
-
 import { HomePage } from "./pages/homePage";
 import { AboutPage } from "./pages/aboutPage";
 import { ContactPage } from "./pages/contactPage";
@@ -15,7 +14,9 @@ import { WebDevelopPage } from "./pages/services/webDevelopPage";
 import { MarketingPage } from "./pages/services/marketingPage";
 import {PodcastPage} from './pages/services/podcastPage'
 
+
 export default function App() {
+
   return (
     <BrowserRouter>
       <Header />
@@ -33,7 +34,6 @@ export default function App() {
         <Route exact path="/marketing-y-diseno" element={<MarketingPage />} />
         <Route exact path="/podcast" element={<PodcastPage />} />
         
-       
       </Routes>
       <Footer />
     </BrowserRouter>

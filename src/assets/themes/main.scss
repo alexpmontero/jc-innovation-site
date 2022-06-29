@@ -690,7 +690,7 @@
       background-size: cover;
     }
     .bg__vii {
-      background: url("../imgs/servicios/streaming/str06.jpg");
+      background: url("../imgs/servicios/streaming/str04.jpg");
       background-position: center center;
       background-size: cover;
     }
@@ -836,5 +836,184 @@
   &.podcast__page {
     background-image: url("../imgs/servicios/podcast/pd06.jpg");
     background-position: center center;
+  }
+}
+
+// == RWD ==
+@media screen and (max-width: 1200px) {
+  .wrapper_header {
+    .header_subnav {
+      .content_subheader {
+        .sec_nav_subheader {
+          .box_item_link_service {
+            ul {
+              display: flex;
+              flex-wrap: wrap;
+              gap: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .wrapper_header {
+    .header_subnav {
+      .content_subheader {
+        .row_subheader {
+          .sec_info_subheader {
+            max-width: 200px !important;
+            margin-top: 1rem;
+          }
+          .sec_nav_subheader {
+            .box_item_link_service {
+              width: calc(50% - 25px) !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .wrapper_header {
+    .header_subnav {
+      .content_subheader {
+        .row_subheader {
+          .sec_info_subheader {
+            max-width: 200px !important;
+            margin-top: 1rem;
+          }
+          .sec_nav_subheader {
+            .box_item_link_service {
+              width: calc(50% - 25px) !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ttls.ttl_in_home {
+    font-size: 45px;
+  }
+  .wrapper_header {
+    .header_botton{
+      .sec_options {
+        .box_options_btns{
+          .btn {
+            min-width: 135px
+          }
+        }
+    }
+    }
+    .header_subnav {
+      .content_subheader {
+        .row_subheader {
+          flex-direction: column;
+          .sec_info_subheader {
+            max-width: 100% !important;
+            div {
+              margin-top: 0rem !important;
+            }
+          }
+          .sec_nav_subheader {
+            .box_item_link_service {
+              width: calc(33.3% - 25px) !important;
+            }
+          }
+        }
+      }
+    }
+  }
+  .wrapper_home {
+    height: 100%;
+    .sec_content_home {
+      padding-top: 180px;
+      flex-direction: column;
+      justify-content: flex-start;
+      .content_info,
+      .content_info_secundary {
+        max-width: 100%;
+        width: 100%;
+      }
+      .content_info_secundary {
+        margin-top: 4rem;
+        display: flex;
+        gap: 15px;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        .item_dot_info {
+          align-items: flex-start;
+        }
+      }
+    }
+  }
+
+  .wrapper_home_break {
+    padding-top: 4rem;
+    .container-lg {
+      .home_break {
+        min-height: 350px;
+        max-height: 350px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 660px){
+  // .wrapper_header .header_botton 
+}
+
+@media screen and (max-width: 620px) {
+  .wrapper_header {
+    .header_subnav {
+      .content_subheader {
+        .row_subheader {
+          flex-direction: column;
+          .sec_info_subheader {
+            max-width: 100% !important;
+            div {
+              margin-top: 0rem !important;
+            }
+          }
+          .sec_nav_subheader {
+            .box_item_link_service {
+              width: calc(50% - 25px) !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .wrapper_header {
+    .header_subnav {
+      .content_subheader {
+        .row_subheader {
+          flex-direction: column;
+          .sec_nav_subheader {
+            gap: 10px !important;
+            .box_item_link_service {
+              width: 100% !important;
+              .name_link_head {
+                min-height: auto !important;
+              }
+              ul li {
+                display: flex;
+                flex-direction: column;
+                width: 30%;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }

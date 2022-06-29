@@ -1,9 +1,16 @@
-import React from "react";
+import React, {useEffect} from "react";
 // import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import bg_contact from "../assets/imgs/bg_contact.jpg";
 
 export const ContactPage = () => {
+  useEffect(() => {
+    const scrollToTop = () => {
+      window.scrollTo(0, 0);
+    }
+    scrollToTop()
+  })
+  
   return (
     <>
       <Helmet>
@@ -97,15 +104,15 @@ export const ContactPage = () => {
                       </label>
                       <input type="email" className="form-control" id="email" />
                     </div>
-                    <div class="mb-3">
+                    <div className="mb-3">
                       <label
                         for="exampleFormControlTextarea1"
-                        class="form-label"
+                        className="form-label"
                       >
                         MENSAJE
                       </label>
                       <textarea
-                        class="form-control"
+                        className="form-control"
                         id="exampleFormControlTextarea1"
                         rows="3"
                       ></textarea>

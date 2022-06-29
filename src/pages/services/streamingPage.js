@@ -1,12 +1,18 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { Helmet } from "react-helmet";
 import { CarouselServices } from "../../components/carouselServices";
 import {BreakAttach} from '../../components/breakAttach'
 
-import bgStreaming from "../../assets/imgs/bg_streaming.png";
+import bgStreamingHead from "../../assets/imgs/servicios/streaming/bg_streaming_head.png";
 import bgStreamingContent from "../../assets/imgs/bg_streaming_content.png";
 
 export const StreamingPage = () => {
+  useEffect(() => {
+    const scrollToTop = () => {
+      window.scrollTo(0, 0);
+    }
+    scrollToTop()
+  })
   return (
     <>
       <Helmet>
@@ -52,7 +58,7 @@ export const StreamingPage = () => {
               </div>
               <div className="col-md-6">
                 <div className="text-center">
-                  <img src={bgStreaming} alt="" />
+                  <img src={bgStreamingHead} alt="" />
                 </div>
               </div>
             </div>

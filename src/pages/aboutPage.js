@@ -1,11 +1,19 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import Slider from "react-slick";
 
 import {ItemTeams} from "../components/itemTeams/itemTeams";
 
+
+
 export const AboutPage = () => {
+  useEffect(() => {
+    const scrollToTop = () => {
+      window.scrollTo(0, 0);
+    }
+    scrollToTop()
+  })
   const settings = {
     arrows:false,
     dots: true,

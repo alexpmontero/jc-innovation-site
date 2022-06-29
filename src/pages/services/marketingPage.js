@@ -1,11 +1,17 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { Helmet } from "react-helmet";
 import { CarouselServices } from "../../components/carouselServices";
 import { BreakAttach } from "../../components/breakAttach";
-import bgStreaming from "../../assets/imgs/bg_streaming.png";
 import bgStreamingContent from "../../assets/imgs/bg_streaming_content.png";
+import bgStreaming from "../../assets/imgs/servicios/marketing/bg_mk_head.png";
 
 export const MarketingPage = () => {
+  useEffect(() => {
+    const scrollToTop = () => {
+      window.scrollTo(0, 0);
+    }
+    scrollToTop()
+  })
   return (
     <>
       <Helmet>

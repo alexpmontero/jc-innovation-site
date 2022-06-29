@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { Helmet } from "react-helmet";
 import {CarouselServices} from '../../components/carouselServices'
 import {BreakAttach} from '../../components/breakAttach'
@@ -8,7 +8,12 @@ import bgVirtual from "../../assets/imgs/bg_virtual.png";
 import bgHibrido from "../../assets/imgs/bg_hibrido.png";
 
 export const CongresosEventosPage = () => {
-  
+  useEffect(() => {
+    const scrollToTop = () => {
+      window.scrollTo(0, 0);
+    }
+    scrollToTop()
+  })
   return (
     <>
       <Helmet>

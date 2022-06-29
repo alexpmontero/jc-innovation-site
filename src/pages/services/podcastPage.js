@@ -1,9 +1,9 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { Helmet } from "react-helmet";
 import { CarouselServices } from "../../components/carouselServices";
 import {BreakAttach} from '../../components/breakAttach'
 
-import bgStreaming from "../../assets/imgs/bg_streaming.png";
+import bgPdcstHead from "../../assets/imgs/servicios/podcast/bg_pdcst_head.png";
 import iconsPodcast from "../../assets/imgs/podcast.png";
 
 import icoPdcst01 from "../../assets/imgs/iconos/ico-pdcst-01.png";
@@ -11,6 +11,12 @@ import icoPdcst02 from "../../assets/imgs/iconos/ico-pdcst-02.png";
 import icoPdcst03 from "../../assets/imgs/iconos/ico-pdcst-03.png";
 
 export const PodcastPage = () => {
+  useEffect(() => {
+    const scrollToTop = () => {
+      window.scrollTo(0, 0);
+    }
+    scrollToTop()
+  })
   return (
     <>
       <Helmet>
@@ -38,7 +44,7 @@ export const PodcastPage = () => {
               </div>
               <div className="col-md-6">
                 <div className="text-center">
-                  <img src={bgStreaming} alt="" />
+                  <img src={bgPdcstHead} alt="" />
                 </div>
               </div>
             </div>

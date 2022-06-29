@@ -115,14 +115,14 @@ export const Footer = () => {
                     <i className="fa-solid fa-phone"></i>
                   </span>
                   <div>
-                    <a href="tel:+5562345558">(556) 234 5558 /</a>
+                    <a href="tel:+5562345558">(556) 234 5558 / </a>
                     <a href="tel:+5589037597">(558) 903 7597</a>
                   </div>
                 </p>
                 <hr />
                 <p className="box_p_foot paragraph sm">
                   <span>
-                    <i class="fa-regular fa-envelope"></i>
+                    <i className="fa-regular fa-envelope"></i>
                   </span>
                   <a href="mailto:Jcinnovations@correo.com">
                     Jcinnovations@correo.com

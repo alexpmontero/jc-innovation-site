@@ -7,13 +7,22 @@
 }
 
 @mixin bgDegradate {
-  background: rgb(28,30,70);
-  background: linear-gradient(151deg, rgba(28,30,70,1) 0%, rgba(34,35,71,1) 57%, rgba(55,54,119,1) 100%);
+  background: rgb(28, 30, 70);
+  background: linear-gradient(
+    151deg,
+    rgba(28, 30, 70, 1) 0%,
+    rgba(34, 35, 71, 1) 57%,
+    rgba(55, 54, 119, 1) 100%
+  );
 }
 
 @mixin borderCustom {
   border: 4px solid #ffffff;
-      box-shadow: 2px 2px 22px rgba(0, 0, 0, 0.25);
+  box-shadow: 2px 2px 22px rgba(0, 0, 0, 0.25);
+}
+
+html {
+  scroll-behavior: auto !important;
 }
 
 body {
@@ -281,6 +290,45 @@ a {
     font-weight: 300;
   }
 }
+
+video,
+img {
+  max-width: 100%;
+}
+
+.wrapper_modal_home {
+  max-width: 100%;
+  width: 100%;
+  padding: 1rem;
+  .sec_video_pride {
+    .btnclose {
+      font-size: 2rem;
+      color: var(--color_morado);
+      position: absolute;
+      top: 0;
+      right: 10px;
+      z-index: 1;
+      text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.25);
+      cursor: pointer;
+    }
+    video{
+      width: 100% !important;
+    }
+  }
+
+  .modal-content{
+    height: auto !important;
+    width: 100% !important;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: transparent;
+  }
+}
+  .modal.show{
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+  }
 
 @-webkit-keyframes icon-bubble {
   0% {

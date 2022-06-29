@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { Modal } from "reactstrap";
 import { Helmet } from "react-helmet";
 import { ExperienceData } from "../components/experienceData/experienceData";
 import { CarouselHome } from "../components/carouselHome/carouselHome";
@@ -7,7 +8,19 @@ import { UpcomingEvents } from "../components/upcomingEvents/upcomingEvents";
 import { BtnDownload } from "../components/btnDownload";
 import { BreakAttach } from "../components/breakAttach";
 
+import promoVdo from '../assets/video/promovideo.mp4'
+
 export const HomePage = () => {
+  useEffect(() => {
+    const scrollToTop = () => {
+      window.scrollTo(0, 0);
+    };
+    scrollToTop();
+  });
+
+  const [modal, setModal] = useState(false);
+  const toggle = () => setModal(!modal);
+
   return (
     <>
       <Helmet>
@@ -24,15 +37,12 @@ export const HomePage = () => {
                     Congresos, Convenciones y Eventos corporativos
                   </h1>
                 </div>
-                <div
-                  className="video-ply-btn"
-                  // onClick={toggle}
-                >
+                <div className="video-ply-btn" onClick={toggle}>
                   <button
                     className=" popup-video mfp-iframe"
-                    // data-bs-toggle="modal"
-                    // data-bs-target="#videoModal"
-                    // onclick="playVideo()"
+                    data-bs-toggle="modal"
+                    data-bs-target="#videoModal"
+                    onclick="playVideo()"
                   >
                     <i className="fa-solid fa-play"></i>
                   </button>
@@ -161,6 +171,22 @@ export const HomePage = () => {
         </div>
 
         <UpcomingEvents />
+
+        <Modal isOpen={modal} toggle={toggle} className="wrapper_modal_home">
+          <div className="sec_video_pride">
+            <span className="btnclose" onClick={toggle}>
+            <i className="fa-solid fa-xmark"></i>
+            </span>
+            <video controls preload autoPlay>
+              <source
+                src={promoVdo}
+                type="video/mp4"
+              />
+            </video>
+            
+
+          </div>
+        </Modal>
       </section>
     </>
   );

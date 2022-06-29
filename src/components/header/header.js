@@ -118,6 +118,7 @@ export const Header = () => {
                       <div className="header_subnav">
                         <div className="container-lg">
                           <div className="content_subheader">
+                            <span className="box_go_back" onClick={toggle}><i className="fa-solid fa-arrow-left"></i> Volver</span>
                             <div className="row_subheader">
                               <div className="sec_info_subheader">
                                 <h4 className="mb-3">JC Innovation</h4>
@@ -131,7 +132,7 @@ export const Header = () => {
                                     to="/contacto"
                                     className="fw_500 c_primary"
                                   >
-                                    <h5>Contácta un asesor</h5>
+                                    <h5>Contácta un asesor_</h5>
                                   </Link>
                                 </div>
                               </div>
@@ -150,9 +151,18 @@ export const Header = () => {
                                       Creamos soluciones digitales para eventos
                                     </p>
                                     <ul>
-                                      <li>_ Presenciales</li>
-                                      <li>_ Virtuales</li>
-                                      <li>_ Híbridos</li>
+                                      <li className="text-center">
+                                        <i className="fa-solid fa-people-group"></i>{" "}
+                                        <span>Presenciales</span>
+                                      </li>
+                                      <li className="text-center">
+                                        <i className="fa-solid fa-users-rectangle"></i>{" "}
+                                        <span>Virtuales</span>
+                                      </li>
+                                      <li className="text-center">
+                                        <i className="fa-solid fa-chalkboard-user"></i>{" "}
+                                        <span>Híbridos</span>
+                                      </li>
                                     </ul>
                                   </div>
                                 </Link>
@@ -240,7 +250,6 @@ export const Header = () => {
           </div>
         </div>
       </div>
-      {/*  */}
     </header>
   );
 };

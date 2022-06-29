@@ -1,11 +1,18 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { Helmet } from "react-helmet";
 import { CarouselServices } from "../../components/carouselServices";
 import {BreakAttach} from "../../components/breakAttach"
-import bgStreaming from "../../assets/imgs/bg_streaming.png";
+
 import bgStreamingContent from "../../assets/imgs/bg_streaming_content.png";
+import bgWebHead from '../../assets/imgs/servicios/web/bg_web_head.png'
 
 export const WebDevelopPage = () => {
+  useEffect(() => {
+    const scrollToTop = () => {
+      window.scrollTo(0, 0);
+    }
+    scrollToTop()
+  })
   return (
     <>
       <Helmet>
@@ -31,7 +38,7 @@ export const WebDevelopPage = () => {
               </div>
               <div className="col-md-6">
                 <div className="text-center">
-                  <img src={bgStreaming} alt="" />
+                  <img src={bgWebHead} alt="Desarrollo web - JC Innovation" />
                 </div>
               </div>
             </div>
