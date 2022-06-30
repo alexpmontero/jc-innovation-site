@@ -48,10 +48,13 @@
       width: 100%;
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: flex-end;
       .nav_options_item {
         width: 100%;
         font-size: 0.9rem;
+        &.open__menu{
+          display: block;
+        }
         ul {
           margin: 0;
           padding: 0;
@@ -71,6 +74,26 @@
               align-items: center;
               gap: 5px;
             }
+          }
+        }
+        .dwld_box{
+          text-align: center;
+          display: none;
+        }
+      }
+      .box_options_btns{
+        .btn_menu{
+          display: none;
+          color: #ffffff;
+          width: 40px;
+          height: 40px;
+          justify-content: center;
+          align-items: center;
+          font-size: 1.5rem;
+          border-radius: 5px;
+          cursor: pointer;
+          &:hover{
+            background: var(--primary_color);
           }
         }
       }
@@ -93,6 +116,9 @@
     }
     .header_top {
       background: var(--color_marin);
+    }
+    .btn_menu{
+      color: #333333 !important;
     }
   }
   .header_subnav {

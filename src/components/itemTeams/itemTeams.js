@@ -49,7 +49,7 @@ export const ItemTeams = () => {
     <div className="wrapper_contain_item_teams">
       <div className="row">
         {itemTeams.map((itemTeam) => (
-          <div className="col-md-4" key={itemTeam.id}>
+          <div className="col-md-4 col-sm-6" key={itemTeam.id}>
             <div className="item_teams trans">
               <div className="text-center photo_teams">
                 <img src={itemTeam.photo} alt="" />

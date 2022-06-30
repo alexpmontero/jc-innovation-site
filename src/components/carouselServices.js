@@ -12,6 +12,20 @@ export const CarouselServices = (props) => {
     speed: 2000,
     autoplaySpeed: 1000,
     cssEase: "linear",
+    responsive: [
+      {
+        breakpoint: 890,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2
+        },
+      },
+    ],
   };
   return (
     <div className={`carousel_in_services ${props.isPage}`}>

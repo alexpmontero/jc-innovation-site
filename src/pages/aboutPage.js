@@ -1,21 +1,19 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import Slider from "react-slick";
 
-import {ItemTeams} from "../components/itemTeams/itemTeams";
-
-
+import { ItemTeams } from "../components/itemTeams/itemTeams";
 
 export const AboutPage = () => {
   useEffect(() => {
     const scrollToTop = () => {
       window.scrollTo(0, 0);
-    }
-    scrollToTop()
-  })
+    };
+    scrollToTop();
+  });
   const settings = {
-    arrows:false,
+    arrows: false,
     dots: true,
     fade: true,
     infinite: true,
@@ -28,28 +26,26 @@ export const AboutPage = () => {
   return (
     <>
       <Helmet>
-        <title>Organización de congresos y eventos - JC Innovation</title>
+        <title>Nosotros - JC Innovation</title>
       </Helmet>
       <section className="wrapper_page_about">
         <div className="contain_head_about">
-          <div className="container-lg">
-            <div className="sec_head container_am">
-              <h6 className="ttls ttl_thin mb-4 c_primary">
-                <span>NUestra empresa</span>
-              </h6>
-              <h3 className="ttls ttl_section_med mb-4">
-                Creamos experiencias y estrategias de comunicación únicas y
-                memorables
-              </h3>
-              <p className="paragraph lg">
-                Somos una empresa con más de 15 años de experiencia en
-                tecnología e innovación para eventos y soluciones digitales
-              </p>
-              <div className="text-center">
-                <Link to="/contacto" className="btn btn-primary mt-4">
-                  HABLA CON NUESTROS EXPERTOS
-                </Link>
-              </div>
+          <div className="sec_head container_am">
+            <h6 className="ttls ttl_thin mb-4 c_primary">
+              <span>NUestra empresa</span>
+            </h6>
+            <h3 className="ttls ttl_section_med mb-4">
+              Creamos experiencias y estrategias de comunicación únicas y
+              memorables
+            </h3>
+            <p className="paragraph lg">
+              Somos una empresa con más de 15 años de experiencia en tecnología
+              e innovación para eventos y soluciones digitales
+            </p>
+            <div className="text-center">
+              <Link to="/contacto" className="btn btn-primary mt-4">
+                HABLA CON NUESTROS EXPERTOS
+              </Link>
             </div>
           </div>
         </div>
@@ -121,8 +117,8 @@ export const AboutPage = () => {
                   </p>
                 </div>
               </div>
-              <div className="col-md-12 text-center mt-5">
-              <Link to="/contacto" className="btn btn-primary mt-4">
+              <div className="col-md-12 text-center mt-3">
+                <Link to="/contacto" className="btn btn-primary mt-4">
                   HABLA CON NUESTROS EXPERTOS
                 </Link>
               </div>
@@ -143,11 +139,9 @@ export const AboutPage = () => {
               incididunt ut labore et dolore magol dolit metsor.
             </p>
           </div>
-
           <div className="container-lg">
-          <ItemTeams />
+            <ItemTeams />
           </div>
-          
         </div>
       </section>
     </>

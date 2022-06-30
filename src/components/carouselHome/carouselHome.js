@@ -7,12 +7,10 @@ import Carousel, {
 import "@brainhubeu/react-carousel/lib/style.css";
 import "./carouselHome.scss";
 
-
 import ico01 from "../../assets/imgs/iconos/ico01.png";
 import ico02 from "../../assets/imgs/iconos/ico02.png";
 import ico03 from "../../assets/imgs/iconos/ico03.png";
 import ico04 from "../../assets/imgs/iconos/ico04.png";
-// import ico05 from "../../assets/imgs/iconos/ico05.png";
 
 export const CarouselHome = () => {
   return (
@@ -30,11 +28,49 @@ export const CarouselHome = () => {
           {
             resolve: autoplayPlugin,
             options: {
-              interval: 3000,
+              interval: 1400,
             },
           },
         ]}
-        animationSpeed={1000}
+        breakpoints={{
+          520: {
+            plugins: [
+              "infinite",
+              "arrows",
+              {
+                resolve: slidesToShowPlugin,
+                options: {
+                  numberOfSlides: 1,
+                },
+              },
+              {
+                resolve: autoplayPlugin,
+                options: {
+                  interval: 1400,
+                },
+              },
+            ],
+          },
+          840: {
+            plugins: [
+              "infinite",
+              "arrows",
+              {
+                resolve: slidesToShowPlugin,
+                options: {
+                  numberOfSlides: 2,
+                },
+              },
+              {
+                resolve: autoplayPlugin,
+                options: {
+                  interval: 1400,
+                },
+              },
+            ],
+          },
+        }}
+        animationSpeed={500}
       >
         <div className="box_item_datainfo bg">
           <img src={ico01} alt="Innovación" />
@@ -72,4 +108,4 @@ export const CarouselHome = () => {
       </Carousel>
     </div>
   );
-}
+};

@@ -18,7 +18,7 @@ export const Footer = () => {
         <div className="container-lg">
           <div className="row">
             <div className="row align-items-center">
-              <div className="col-md-8">
+              <div className="col-md-8 mb-3">
                 <div className="mnsj_info">
                   <h3 className="ttls ttl_section mb-4">
                     ¿Tienes una idea para tu evento?
@@ -28,7 +28,7 @@ export const Footer = () => {
                   </p>
                 </div>
               </div>
-              <div className="col-md-4">
+              <div className="col-md-4 mb-3">
                 <div className="box_options_btns">
                   <BtnDownload colors="in-color" />
 

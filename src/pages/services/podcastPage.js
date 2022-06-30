@@ -43,8 +43,8 @@ export const PodcastPage = () => {
                 </div>
               </div>
               <div className="col-md-6">
-                <div className="text-center">
-                  <img src={bgPdcstHead} alt="" />
+                <div className="text-center mb-4">
+                  <img src={bgPdcstHead} alt="Podcast" />
                 </div>
               </div>
             </div>
@@ -73,7 +73,7 @@ export const PodcastPage = () => {
         <div className="contain_info__page ">
           <div className="container-lg">
             <div className="row gx-5">
-              <div className="col-md-4 mb-3">
+              <div className="col-md-4 col-sm-6 mb-3">
                 <div>
                   <div className="icoinpods">
                     <img src={icoPdcst01} alt="Podcast JC Innovation" />
@@ -93,7 +93,7 @@ export const PodcastPage = () => {
                   </p>
                 </div>
               </div>
-              <div className="col-md-4 mb-3">
+              <div className="col-md-4 col-sm-6 mb-3">
                 <div>
                   <div className="icoinpods">
                     <img src={icoPdcst02} alt="Podcast JC Innovation" />
@@ -137,7 +137,7 @@ export const PodcastPage = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-md-4 mb-3">
+              <div className="col-md-4 col-sm-6 mb-3">
                 <div>
                   <div className="icoinpods">
                     <img src={icoPdcst03} alt="Podcast JC Innovation" />

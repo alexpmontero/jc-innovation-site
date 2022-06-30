@@ -1,5 +1,4 @@
 import React, {useEffect} from "react";
-// import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import bg_contact from "../assets/imgs/bg_contact.jpg";
 
@@ -18,7 +17,6 @@ export const ContactPage = () => {
       </Helmet>
       <section className="wrapper_page_contact">
         <div className="contain_head_contact">
-          <div className="container-lg">
             <div className="sec_head container_am">
               <h6 className="ttls ttl_thin mb-4 c_primary">
                 <span>CONTÁCTENOS</span>
@@ -31,13 +29,12 @@ export const ContactPage = () => {
                 que podemos ayudarte en los proyectos que tienes en mente.
               </p>
             </div>
-          </div>
         </div>
         <div className="contain_bg_data_business">
           <div className="container-lg">
             <div className="row">
-              <div className="col-md-4">
-                <div className="item_contact_head">
+              <div className="col-md-4 col-sm-6">
+                <div className="item_contact_head mb-4">
                   <div>
                     <h1>
                       <i className="fa-regular fa-envelope"></i>
@@ -50,8 +47,8 @@ export const ContactPage = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-md-4">
-                <div className="item_contact_head">
+              <div className="col-md-4 col-sm-6">
+                <div className="item_contact_head mb-4">
                   <div>
                     <h1>
                       <i className="fa-solid fa-phone"></i>
@@ -63,8 +60,8 @@ export const ContactPage = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-md-4">
-                <div className="item_contact_head">
+              <div className="col-md-4 col-sm-6">
+                <div className="item_contact_head mb-4">
                   <div>
                     <h1>
                       <i className="fa-solid fa-location-dot"></i>
@@ -79,7 +76,7 @@ export const ContactPage = () => {
         <div className="contain_in_contact">
           <div className="container-lg">
             <div className="row">
-              <div className="col-md-6">
+              <div className="col-sm-6">
                 <div className="sec_form_contact">
                   <h3 className="ttls ttl_section ">
                     Únase a nosotros hoy y permítanos ayudarlo a poner en marcha
@@ -123,7 +120,7 @@ export const ContactPage = () => {
                   </form>
                 </div>
               </div>
-              <div className="col-md-6">
+              <div className="col-sm-6">
                 <div className="sec_bg_contact">
                   <img src={bg_contact} alt="Contacto JC Innovation" />
                 </div>

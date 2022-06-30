@@ -21,6 +21,18 @@ export const Header = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const toggle = () => setDropdownOpen((prevState) => !prevState);
 
+  const [openMenu, setOpenMenu] = useState("");
+
+  
+  const handlerMenu = () => {
+    setOpenMenu(openMenu === "" ? "open__menu" : "");
+  };
+
+  const handlSubMenu = () => {
+    setOpenMenu(openMenu === "" ? "open__menu" : "");
+    setDropdownOpen((prevState) => !prevState);
+  };
+
   return (
     <header
       className={`wrapper_header trans ${
@@ -84,26 +96,28 @@ export const Header = () => {
       <div className="container-lg">
         <div className="header_botton">
           <div className="sec_brand">
-            <img
-              className="logo_brand"
-              src={LogoOficial}
-              alt="JC Innovations"
-            />
+            <Link to="/">
+              <img
+                className="logo_brand"
+                src={LogoOficial}
+                alt="JC Innovations"
+              />
+            </Link>
           </div>
           <div className="sec_options">
-            <nav className="nav_options_item">
-              <ul>
-                <li>
+            <nav className={`nav_options_item ${openMenu}`}>
+              <ul className="ul_nav_master">
+                <li className="li_nav_master" onClick={handlerMenu}>
                   <Link className="item_link" to="/">
                     INICIO
                   </Link>
                 </li>
-                <li>
+                <li className="li_nav_master" onClick={handlerMenu}>
                   <Link className="item_link" to="/nosotros">
                     NOSOTROS
                   </Link>
                 </li>
-                <li>
+                <li className="li_nav_master" >
                   <Dropdown isOpen={dropdownOpen} toggle={toggle}>
                     <DropdownToggle
                       caret
@@ -118,7 +132,9 @@ export const Header = () => {
                       <div className="header_subnav">
                         <div className="container-lg">
                           <div className="content_subheader">
-                            <span className="box_go_back" onClick={toggle}><i className="fa-solid fa-arrow-left"></i> Volver</span>
+                            <span className="box_go_back" onClick={toggle}>
+                              <i className="fa-solid fa-arrow-left"></i> Volver
+                            </span>
                             <div className="row_subheader">
                               <div className="sec_info_subheader">
                                 <h4 className="mb-3">JC Innovation</h4>
@@ -130,7 +146,8 @@ export const Header = () => {
                                 <div className="mt-5">
                                   <Link
                                     to="/contacto"
-                                    className="fw_500 c_primary"
+                                    className="fw_500 c_morado"
+                                    onClick={handlSubMenu}
                                   >
                                     <h5>Contácta un asesor_</h5>
                                   </Link>
@@ -140,7 +157,7 @@ export const Header = () => {
                                 <Link
                                   to="/organizacion-congresos-eventos"
                                   className="box_item_link_service"
-                                  onClick={toggle}
+                                  onClick={handlSubMenu}
                                 >
                                   <h6 className="name_link_head ">
                                     Organización de congresos Y eventos
@@ -169,7 +186,7 @@ export const Header = () => {
                                 <Link
                                   to="/streaming"
                                   className="box_item_link_service"
-                                  onClick={toggle}
+                                  onClick={handlSubMenu}
                                 >
                                   <h6 className="name_link_head ">Streaming</h6>
                                   <hr />
@@ -183,7 +200,7 @@ export const Header = () => {
                                 <Link
                                   to="/desarrollo-software"
                                   className="box_item_link_service"
-                                  onClick={toggle}
+                                  onClick={handlSubMenu}
                                 >
                                   <h6 className="name_link_head ">
                                     Desarrollo de software
@@ -200,7 +217,7 @@ export const Header = () => {
                                 <Link
                                   to="/marketing-y-diseno"
                                   className="box_item_link_service"
-                                  onClick={toggle}
+                                  onClick={handlSubMenu}
                                 >
                                   <h6 className="name_link_head ">
                                     Marketing y Diseño Gráfico
@@ -217,7 +234,7 @@ export const Header = () => {
                                 <Link
                                   to="/podcast"
                                   className="box_item_link_service"
-                                  onClick={toggle}
+                                  onClick={handlSubMenu}
                                 >
                                   <h6 className="name_link_head ">Podcast</h6>
                                   <hr />
@@ -236,6 +253,9 @@ export const Header = () => {
                     </DropdownMenu>
                   </Dropdown>
                 </li>
+                <div className="dwld_box">
+                  <BtnDownload />
+                </div>
               </ul>
             </nav>
             <div className="box_options_btns">
@@ -246,6 +266,9 @@ export const Header = () => {
                 </span>
                 <span>¡HABLEMOS!</span>
               </Link>
+              <span className="btn_menu" onClick={handlerMenu}>
+                <i className="fa-solid fa-bars"></i>
+              </span>
             </div>
           </div>
         </div>

@@ -6,17 +6,15 @@ import Carousel, {
 import "@brainhubeu/react-carousel/lib/style.css";
 import "./upcomingEvents.scss";
 
-
-import itemUpcoming01 from '../../assets/imgs/upcoming-events/prox1.png'
-import itemUpcoming02 from '../../assets/imgs/upcoming-events/prox2.png'
-import itemUpcoming03 from '../../assets/imgs/upcoming-events/prox3.png'
-import itemUpcoming04 from '../../assets/imgs/upcoming-events/prox4.png'
-import itemUpcoming05 from '../../assets/imgs/upcoming-events/prox5.png'
-import itemUpcoming06 from '../../assets/imgs/upcoming-events/prox6.png'
-import itemUpcoming07 from '../../assets/imgs/upcoming-events/prox7.png'
-import itemUpcoming08 from '../../assets/imgs/upcoming-events/prox8.png'
-import itemUpcoming09 from '../../assets/imgs/upcoming-events/prox9.png'
-
+import itemUpcoming01 from "../../assets/imgs/upcoming-events/prox1.png";
+import itemUpcoming02 from "../../assets/imgs/upcoming-events/prox2.png";
+import itemUpcoming03 from "../../assets/imgs/upcoming-events/prox3.png";
+import itemUpcoming04 from "../../assets/imgs/upcoming-events/prox4.png";
+import itemUpcoming05 from "../../assets/imgs/upcoming-events/prox5.png";
+import itemUpcoming06 from "../../assets/imgs/upcoming-events/prox6.png";
+import itemUpcoming07 from "../../assets/imgs/upcoming-events/prox7.png";
+import itemUpcoming08 from "../../assets/imgs/upcoming-events/prox8.png";
+import itemUpcoming09 from "../../assets/imgs/upcoming-events/prox9.png";
 
 export const UpcomingEvents = () => {
   return (
@@ -46,64 +44,78 @@ export const UpcomingEvents = () => {
               {
                 resolve: autoplayPlugin,
                 options: {
-                  interval: 2000,
+                  interval: 1250,
                 },
               },
             ]}
+            breakpoints={{
+              480: {
+                plugins: [
+                  "centered",
+                  "infinite",
+                  "arrows",
+                  {
+                    resolve: slidesToShowPlugin,
+                    options: {
+                      numberOfSlides: 1,
+                    },
+                  },
+                  {
+                    resolve: autoplayPlugin,
+                    options: {
+                      interval: 1250,
+                    },
+                  },
+                ],
+              },
+              1200: {
+                plugins: [
+                  "centered",
+                  "infinite",
+                  "arrows",
+                  {
+                    resolve: slidesToShowPlugin,
+                    options: {
+                      numberOfSlides: 2,
+                    },
+                  },
+                  {
+                    resolve: autoplayPlugin,
+                    options: {
+                      interval: 1250,
+                    },
+                  },
+                ],
+              },
+            }}
+            animationSpeed={500}
           >
             <div className="item_upcoming">
-              <img
-                src={itemUpcoming01}
-                alt="PRÓXIMOS EVENTOS JC INNOVATION"
-              />
+              <img src={itemUpcoming01} alt="PRÓXIMOS EVENTOS JC INNOVATION" />
             </div>
             <div className="item_upcoming">
-              <img
-                src={itemUpcoming02}
-                alt="PRÓXIMOS EVENTOS JC INNOVATION"
-              />
+              <img src={itemUpcoming02} alt="PRÓXIMOS EVENTOS JC INNOVATION" />
             </div>
             <div className="item_upcoming">
-              <img
-                src={itemUpcoming03}
-                alt="PRÓXIMOS EVENTOS JC INNOVATION"
-              />
+              <img src={itemUpcoming03} alt="PRÓXIMOS EVENTOS JC INNOVATION" />
             </div>
             <div className="item_upcoming">
-              <img
-                src={itemUpcoming04}
-                alt="PRÓXIMOS EVENTOS JC INNOVATION"
-              />
+              <img src={itemUpcoming04} alt="PRÓXIMOS EVENTOS JC INNOVATION" />
             </div>
             <div className="item_upcoming">
-              <img
-                src={itemUpcoming05}
-                alt="PRÓXIMOS EVENTOS JC INNOVATION"
-              />
+              <img src={itemUpcoming05} alt="PRÓXIMOS EVENTOS JC INNOVATION" />
             </div>
             <div className="item_upcoming">
-              <img
-                src={itemUpcoming06}
-                alt="PRÓXIMOS EVENTOS JC INNOVATION"
-              />
+              <img src={itemUpcoming06} alt="PRÓXIMOS EVENTOS JC INNOVATION" />
             </div>
             <div className="item_upcoming">
-              <img
-                src={itemUpcoming07}
-                alt="PRÓXIMOS EVENTOS JC INNOVATION"
-              />
+              <img src={itemUpcoming07} alt="PRÓXIMOS EVENTOS JC INNOVATION" />
             </div>
             <div className="item_upcoming">
-              <img
-                src={itemUpcoming08}
-                alt="PRÓXIMOS EVENTOS JC INNOVATION"
-              />
+              <img src={itemUpcoming08} alt="PRÓXIMOS EVENTOS JC INNOVATION" />
             </div>
             <div className="item_upcoming">
-              <img
-                src={itemUpcoming09}
-                alt="PRÓXIMOS EVENTOS JC INNOVATION"
-              />
+              <img src={itemUpcoming09} alt="PRÓXIMOS EVENTOS JC INNOVATION" />
             </div>
           </Carousel>
         </div>

@@ -8,7 +8,7 @@ import { UpcomingEvents } from "../components/upcomingEvents/upcomingEvents";
 import { BtnDownload } from "../components/btnDownload";
 import { BreakAttach } from "../components/breakAttach";
 
-import promoVdo from '../assets/video/promovideo.mp4'
+import promoVdo from "../assets/video/promovideo.mp4";
 
 export const HomePage = () => {
   useEffect(() => {
@@ -107,7 +107,7 @@ export const HomePage = () => {
           </div>
         </div>
 
-        <div className="wrapper_subservices">
+        <div className="wrapper_subservices d-none">
           <div className="content_subservices">
             <div className="container-lg">
               <div className="sec_titular">
@@ -171,20 +171,17 @@ export const HomePage = () => {
         </div>
 
         <UpcomingEvents />
+        
+        <section className="d-none"></section>
 
         <Modal isOpen={modal} toggle={toggle} className="wrapper_modal_home">
           <div className="sec_video_pride">
             <span className="btnclose" onClick={toggle}>
-            <i className="fa-solid fa-xmark"></i>
+              <i className="fa-solid fa-xmark"></i>
             </span>
             <video controls preload autoPlay>
-              <source
-                src={promoVdo}
-                type="video/mp4"
-              />
+              <source src={promoVdo} type="video/mp4" />
             </video>
-            
-
           </div>
         </Modal>
       </section>

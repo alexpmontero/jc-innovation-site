@@ -1,7 +1,7 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
-import {CarouselServices} from '../../components/carouselServices'
-import {BreakAttach} from '../../components/breakAttach'
+import { CarouselServices } from "../../components/carouselServices";
+import { BreakAttach } from "../../components/breakAttach";
 
 import bgPresencial from "../../assets/imgs/bg_presencial.png";
 import bgVirtual from "../../assets/imgs/bg_virtual.png";
@@ -11,9 +11,9 @@ export const CongresosEventosPage = () => {
   useEffect(() => {
     const scrollToTop = () => {
       window.scrollTo(0, 0);
-    }
-    scrollToTop()
-  })
+    };
+    scrollToTop();
+  });
   return (
     <>
       <Helmet>
@@ -21,21 +21,19 @@ export const CongresosEventosPage = () => {
       </Helmet>
       <section className="wrapper_congresos_eventos_page">
         <div className="contain_head_congresos_eventos">
-          <div className="container-lg">
-            <div className="sec_head container_am">
-              <h6 className="ttls ttl_thin mb-4 c_primary">
-                <span>servicios</span>
-              </h6>
-              <h3 className="ttls ttl_in_home mb-4">
-                Organización de congresos y eventos
-              </h3>
-            </div>
+          <div className="sec_head container_am">
+            <h6 className="ttls ttl_thin mb-4 c_primary">
+              <span>servicios</span>
+            </h6>
+            <h3 className="ttls ttl_in_home mb-4">
+              Organización de congresos y eventos
+            </h3>
           </div>
         </div>
         <div className="contain__congresos_eventos">
           <div className="container-lg">
             <div className="sec_slider_page_events">
-            <CarouselServices isPage='_congresos_eventos' />
+              <CarouselServices isPage="_congresos_eventos" />
             </div>
           </div>
         </div>
@@ -44,7 +42,7 @@ export const CongresosEventosPage = () => {
           <div className="container-lg">
             <div className="row justify-content-between">
               <div className="col-md-5">
-                <div className="box_info__services">
+                <div className="box_info__services mb-5">
                   <h6 className="ttls ttl_thin mb-3 simple">
                     <span>Eventos corporativos</span>
                   </h6>
@@ -68,7 +66,7 @@ export const CongresosEventosPage = () => {
                 </div>
               </div>
               <div className="col-md-6">
-                <div className="box_bg_services ">
+                <div className="box_bg_services text-center">
                   <img
                     src={bgPresencial}
                     alt="Congresos y Eventos Presenciales"
@@ -83,12 +81,12 @@ export const CongresosEventosPage = () => {
           <div className="container-lg">
             <div className="row justify-content-between">
               <div className="col-md-5">
-                <div className="box_bg_services ">
+                <div className="box_bg_services mb-2 text-center">
                   <img src={bgVirtual} alt="Congresos y Eventos Virtuales" />
                 </div>
               </div>
               <div className="col-md-6">
-                <div className="box_info__presencial">
+                <div className="box_info__presencial mb-5">
                   <h6 className="ttls ttl_thin mb-3 simple">
                     <span>Eventos corporativos</span>
                   </h6>
@@ -128,126 +126,123 @@ export const CongresosEventosPage = () => {
         </div>
 
         <div className="contain_info__congresos scope">
-          <div className="container-lg">
-            <div className="text-center container_am">
-              <h6 className="ttls ttl_thin mb-4">
-                <span>Llega a más personas</span>
-              </h6>
-              <h3 className="ttls ttl_section mb-4">
-                Visualiza el alcance de tu evento presencial y virtual
-              </h3>
-              <p className="paragraph lg">
-                Dos experiencias personalizadas para cada tipo de asistente
-              </p>
-            </div>
-
-            <div className="section_compare_events">
-              <div className="container_am">
-                <div className="row_compare_events">
-                  <div className="box_details_events ttl__compare">
-                    <h4 className="fw_500 c_morado ">Antes del evento</h4>
-                  </div>
-                  <div className="box_details_events">
-                    <h3 className="fw_500 text-center ttl_service_compare">
-                      Presencial
-                    </h3>
-                    <ul>
-                      <li>
-                        <p className="paragraph sm">Registro en sitio</p>
-                      </li>
-                      <li>
-                        <p className="paragraph sm">Hospedaje</p>
-                      </li>
-                      <li>
-                        <p className="paragraph sm">Apoyos gubernamentales</p>
-                      </li>
-                      <li>
-                        <p className="paragraph sm">
-                          Transportación área y terrestre
-                        </p>
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="box_details_events">
-                    <h3 className="fw_500 text-center ttl_service_compare">
-                      Virtual
-                    </h3>
-                    <ul>
-                      <li>
-                        <p className="paragraph sm">Registro en línea</p>
-                      </li>
-                      <li>
-                        <p className="paragraph sm">Desarrollo web </p>
-                      </li>
-                    </ul>
-                  </div>
+          <div className="text-center container_am">
+            <h6 className="ttls ttl_thin mb-4">
+              <span>Llega a más personas</span>
+            </h6>
+            <h3 className="ttls ttl_section mb-4">
+              Visualiza el alcance de tu evento presencial y virtual
+            </h3>
+            <p className="paragraph lg">
+              Dos experiencias personalizadas para cada tipo de asistente
+            </p>
+          </div>
+          <div className="section_compare_events">
+            <div className="container_am">
+              <div className="row_compare_events">
+                <div className="box_details_events ttl__compare">
+                  <h4 className="fw_500 c_morado ">Antes del evento</h4>
                 </div>
-                <div className="row_compare_events">
-                  <div className="box_details_events ttl__compare">
-                    <h4 className="fw_500 c_morado ">Durante del evento</h4>
-                  </div>
-                  <div className="box_details_events">
-                    <ul>
-                      <li>
-                        <p className="paragraph sm">Gestión de eventos </p>
-                      </li>
-                      <li>
-                        <p className="paragraph sm">Expo comercial</p>
-                      </li>
-                      <li>
-                        <p className="paragraph sm">Eventos sociales</p>
-                      </li>
-                      <li>
-                        <p className="paragraph sm">Tour de acompañantes </p>
-                      </li>
-                      <li>
-                        <p className="paragraph sm">Personal bilingue</p>
-                      </li>
-                      <li>
-                        <p className="paragraph sm">Display e impresos</p>
-                      </li>
-                      <li>
-                        <p className="paragraph sm">Audio</p>
-                      </li>
-                      <li>
-                        <p className="paragraph sm">Iluminación</p>
-                      </li>
-                      <li>
-                        <p className="paragraph sm">Proyección</p>
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="box_details_events">
-                    <ul>
-                      <li>
-                        <p className="paragraph sm">Gestión de evento</p>
-                      </li>
-                      <li>
-                        <p className="paragraph sm">Streaming</p>
-                      </li>
-                      <li>
-                        <p className="paragraph sm">Expo Comercial</p>
-                      </li>
-                      <li>
-                        <p className="paragraph sm">Personal bilingüe</p>
-                      </li>
-                    </ul>
-                  </div>
+                <div className="box_details_events">
+                  <h3 className="fw_500 text-center ttl_service_compare">
+                    Presencial
+                  </h3>
+                  <ul>
+                    <li>
+                      <p className="paragraph sm">Registro en sitio</p>
+                    </li>
+                    <li>
+                      <p className="paragraph sm">Hospedaje</p>
+                    </li>
+                    <li>
+                      <p className="paragraph sm">Apoyos gubernamentales</p>
+                    </li>
+                    <li>
+                      <p className="paragraph sm">
+                        Transportación área y terrestre
+                      </p>
+                    </li>
+                  </ul>
                 </div>
-                <div className="row_compare_events">
-                  <div className="box_details_events ttl__compare">
-                    <h4 className="fw_500 c_morado ">Después del evento</h4>
-                  </div>
-                  <div className="box_details_events">
-                    <ul>
-                      <li>
-                        <p className="paragraph sm">Catering </p>
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="box_details_events">
-                    <p className="paragraph sm">-</p>
-                  </div>
+                <div className="box_details_events">
+                  <h3 className="fw_500 text-center ttl_service_compare">
+                    Virtual
+                  </h3>
+                  <ul>
+                    <li>
+                      <p className="paragraph sm">Registro en línea</p>
+                    </li>
+                    <li>
+                      <p className="paragraph sm">Desarrollo web </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div className="row_compare_events">
+                <div className="box_details_events ttl__compare">
+                  <h4 className="fw_500 c_morado ">Durante del evento</h4>
+                </div>
+                <div className="box_details_events">
+                  <ul>
+                    <li>
+                      <p className="paragraph sm">Gestión de eventos </p>
+                    </li>
+                    <li>
+                      <p className="paragraph sm">Expo comercial</p>
+                    </li>
+                    <li>
+                      <p className="paragraph sm">Eventos sociales</p>
+                    </li>
+                    <li>
+                      <p className="paragraph sm">Tour de acompañantes </p>
+                    </li>
+                    <li>
+                      <p className="paragraph sm">Personal bilingue</p>
+                    </li>
+                    <li>
+                      <p className="paragraph sm">Display e impresos</p>
+                    </li>
+                    <li>
+                      <p className="paragraph sm">Audio</p>
+                    </li>
+                    <li>
+                      <p className="paragraph sm">Iluminación</p>
+                    </li>
+                    <li>
+                      <p className="paragraph sm">Proyección</p>
+                    </li>
+                  </ul>
+                </div>
+                <div className="box_details_events">
+                  <ul>
+                    <li>
+                      <p className="paragraph sm">Gestión de evento</p>
+                    </li>
+                    <li>
+                      <p className="paragraph sm">Streaming</p>
+                    </li>
+                    <li>
+                      <p className="paragraph sm">Expo Comercial</p>
+                    </li>
+                    <li>
+                      <p className="paragraph sm">Personal bilingüe</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div className="row_compare_events">
+                <div className="box_details_events ttl__compare">
+                  <h4 className="fw_500 c_morado ">Después del evento</h4>
+                </div>
+                <div className="box_details_events">
+                  <ul>
+                    <li>
+                      <p className="paragraph sm">Catering </p>
+                    </li>
+                  </ul>
+                </div>
+                <div className="box_details_events">
+                  <p className="paragraph sm">-</p>
                 </div>
               </div>
             </div>
@@ -258,12 +253,12 @@ export const CongresosEventosPage = () => {
           <div className="container-lg">
             <div className="row justify-content-between">
               <div className="col-md-5">
-                <div className="box_bg_services ">
+                <div className="box_bg_services mb-2 text-center">
                   <img src={bgHibrido} alt="Congresos y Eventos Híbrido" />
                 </div>
               </div>
               <div className="col-md-6">
-                <div className="box_info__presencial mt-4">
+                <div className="box_info__presencial mb-5 mt-4">
                   <h6 className="ttls ttl_thin mb-3 simple">
                     <span>Eventos corporativos</span>
                   </h6>
@@ -295,7 +290,7 @@ export const CongresosEventosPage = () => {
             </div>
           </div>
         </div>
-        <BreakAttach inPage='congresosEventos__page' />
+        <BreakAttach inPage="congresosEventos__page" />
       </section>
     </>
   );
