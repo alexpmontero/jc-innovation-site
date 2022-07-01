@@ -135,7 +135,7 @@ export const SubservicesTabs = () => {
           <TabPane tabId={`${itemSubservice.id}`}>
             <div className="content_tabs_group">
               <div className="row">
-                <div className="col-md-7">
+                <div className="col-md-7 ">
                   <div className="box_info_tabs">
                     <h3 className="ttls ttl_section mb-4">
                       {itemSubservice.nameSubservice}
@@ -163,7 +163,7 @@ export const SubservicesTabs = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-md-3">
+                <div className="col-md-5">
                   <div className="box_infoimgs_tabs">
                     <img
                       src={itemSubservice.picture}
