@@ -1,18 +1,18 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
 import { CarouselServices } from "../../components/carouselServices";
-import {BreakAttach} from '../../components/breakAttach'
+import { BreakAttach } from "../../components/breakAttach";
 
 import bgStreamingHead from "../../assets/imgs/servicios/streaming/bg_streaming_head.png";
-import bgStreamingContent from "../../assets/imgs/bg_streaming_content.png";
+import bgStreamingContent from "../../assets/imgs/servicios/streaming/str05.jpg";
 
 export const StreamingPage = () => {
   useEffect(() => {
     const scrollToTop = () => {
       window.scrollTo(0, 0);
-    }
-    scrollToTop()
-  })
+    };
+    scrollToTop();
+  });
   return (
     <>
       <Helmet>
@@ -29,8 +29,9 @@ export const StreamingPage = () => {
                   </h6>
                   <h3 className="ttls ttl_in_home mb-4">Streaming</h3>
                   <p className="paragraph lg">
-                    Somos una empresa con más de 15 años de experiencia en
-                    tecnología e innovación para eventos y soluciones digitales
+                    Nos ajustamos a todos tus eventos, nuestra experiencia nos
+                    ha dado las herramientas para ofrecer streaming para eventos
+                    de música, eventos empresariales y eventos corporativos.
                   </p>
                   <div className="mt-5 text-start">
                     <div className="row">
@@ -65,16 +66,20 @@ export const StreamingPage = () => {
           </div>
         </div>
         <div className="contain__slide_page">
-          <div className="container-lg">
+          <div className="container_am">
             <div className="text-center ">
               <h3 className="ttls ttl_section mb-2">
-                Fácil, atractivo y todo en tiempo real
+                Fácil, atractivo y{" "}
+                <span className="c_morado"> todo en tiempo real</span>
               </h3>
               <p className="paragraph lg">
-                ¡Hacemos transmisiones en vivo para tu evento virtual o
-                presencial!
+                Nuestra solución es completa y ofrecemos toda nuestra
+                experiencia y equipo de producción para lograr transmitir tu
+                evento a la mayor cantidad de usuarios con la mejor calidad.
               </p>
             </div>
+          </div>
+          <div className="container-lg">
             <div className="sec_slider_page_events">
               <CarouselServices isPage="_streaming" />
             </div>
@@ -100,11 +105,24 @@ export const StreamingPage = () => {
                 Relaciónate en un ambiente digital totalmente inmersivo y
                 realiza actividades como en un congreso presencial.
               </p>
+
+              <h4 className="mt-5">
+                <span className="c_morado">Tú haces tus contenidos,</span>{" "}
+                nosotros todo lo demás
+              </h4>
             </div>
             <div className="con_img_info">
               <img src={bgStreamingContent} alt="Streaming" />
             </div>
             <div className="col_info">
+              <p className="paragraph sm mb-5">
+                <span className="c_morado fw_600">
+                  {" "}
+                  Cada transmisión que haces pone sobre la mesa la reputación de
+                  tu marca,
+                </span>{" "}
+                el compromiso con tu audiencia y los resultados de tu compañía.
+              </p>
               <p className="paragraph sm fw_500">
                 <span>
                   <i className="c_primary fa-solid fa-plus"></i>
@@ -138,8 +156,7 @@ export const StreamingPage = () => {
             </div>
           </div>
         </div>
-        <BreakAttach inPage='streaming__page' />
-
+        <BreakAttach inPage="streaming__page" />
       </section>
     </>
   );

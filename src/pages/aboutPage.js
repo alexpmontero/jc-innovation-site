@@ -135,8 +135,7 @@ export const AboutPage = () => {
               Conoce a nuestro gran equipo de expertos
             </h3>
             <p className="paragraph lg">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit seddte
-              incididunt ut labore et dolore magol dolit metsor.
+            Conozca a nuestro panel de expertos, una amplia gama de profesionales de la industria con un conocimiento profundo sobre administración y tecnología.
             </p>
           </div>
           <div className="container-lg">

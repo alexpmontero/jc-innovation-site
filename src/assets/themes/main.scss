@@ -597,9 +597,11 @@
       .col_info {
         max-width: 320px;
         width: 100%;
-        margin-top: 50px;
+        margin-top: 30px;
       }
       .con_img_info {
+        max-width: 500px;
+        padding: 0 1rem;
         img {
           width: 100%;
         }

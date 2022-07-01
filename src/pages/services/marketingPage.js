@@ -1,17 +1,17 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
 import { CarouselServices } from "../../components/carouselServices";
 import { BreakAttach } from "../../components/breakAttach";
-import bgStreamingContent from "../../assets/imgs/bg_streaming_content.png";
+import bgStreamingContent from "../../assets/imgs/servicios/marketing//marketing.jpg";
 import bgStreaming from "../../assets/imgs/servicios/marketing/bg_mk_head.png";
 
 export const MarketingPage = () => {
   useEffect(() => {
     const scrollToTop = () => {
       window.scrollTo(0, 0);
-    }
-    scrollToTop()
-  })
+    };
+    scrollToTop();
+  });
   return (
     <>
       <Helmet>
@@ -30,8 +30,11 @@ export const MarketingPage = () => {
                     Marketing y Diseño Gráfico
                   </h3>
                   <p className="paragraph lg">
-                    Generamos estrategias en redes sociales para aumentar la
-                    presencia digital de tu marca, evento o campaña
+                    Creamos conceptos creativos de comunicación y generamos
+                    contenido de valor con un manejo óptimo de las herramientas
+                    digitales.
+                    {/* Generamos estrategias en redes sociales para aumentar la
+                    presencia digital de tu marca, evento o campaña */}
                   </p>
                 </div>
               </div>

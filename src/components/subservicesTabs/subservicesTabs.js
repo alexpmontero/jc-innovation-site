@@ -5,6 +5,7 @@ import "./subservicesTabs.scss";
 export const SubservicesTabs = () => {
   const [activeTab, setActiveTab] = useState("1");
   const [itemSubservices, setItemSubservices] = useState([]);
+  
   useEffect(() => {
     const contentSubservices = [
       {

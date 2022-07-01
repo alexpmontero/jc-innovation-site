@@ -1,18 +1,18 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
 import { CarouselServices } from "../../components/carouselServices";
-import {BreakAttach} from "../../components/breakAttach"
+import { BreakAttach } from "../../components/breakAttach";
 
-import bgStreamingContent from "../../assets/imgs/bg_streaming_content.png";
-import bgWebHead from '../../assets/imgs/servicios/web/bg_web_head.png'
+import bgStreamingContent from "../../assets/imgs/servicios/web/apps.jpg";
+import bgWebHead from "../../assets/imgs/servicios/web/bg_web_head.png";
 
 export const WebDevelopPage = () => {
   useEffect(() => {
     const scrollToTop = () => {
       window.scrollTo(0, 0);
-    }
-    scrollToTop()
-  })
+    };
+    scrollToTop();
+  });
   return (
     <>
       <Helmet>
@@ -31,8 +31,12 @@ export const WebDevelopPage = () => {
                     Desarrollo de software
                   </h3>
                   <p className="paragraph lg">
-                    Creamos plataformas de sistemas de socios, facturación &
-                    e-learnings, a la medida de tus necesidades
+                    <span className="fw_600 c_primary">
+                      {" "}
+                      Ingreso fácil y seguro.
+                    </span>
+                    <br /> Nuestras plataformas son amigables, intuitivas y
+                    creadas para todo tipo de público
                   </p>
                 </div>
               </div>
@@ -45,19 +49,21 @@ export const WebDevelopPage = () => {
           </div>
         </div>
         <div className="contain__slide_page">
-          <div className="container-lg">
+          <div className="container_am">
             <div className="container_am text-center ">
               <h3 className="ttls ttl_section mb-2">
-                El software personalizado que tu evento se merece
+                <span className="c_morado">El software personalizado</span> que
+                tu evento se merece
               </h3>
               <p className="paragraph lg">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-                voluptate fuga tempora odio? Accusantium sapiente eaque, quis
-                ducimus autem odit dicta.
+                Creamos plataformas de sistemas de socios, facturación &
+                e-learnings, a la medida de tus necesidades
               </p>
             </div>
+          </div>
+          <div className="container-lg">
             <div className="sec_slider_page_events">
-              <CarouselServices isPage={'_webDevelop'}/>
+              <CarouselServices isPage={"_webDevelop"} />
             </div>
           </div>
         </div>
@@ -66,21 +72,24 @@ export const WebDevelopPage = () => {
           <div className="container_am">
             <div className="text-center">
               <h3 className="ttls ttl_section mb-2">
-                Somos especialistas en el desarrollo de software funcional y
-                efectivo
+                Somos especialistas en el desarrollo de{" "}
+                <span className="c_morado">software funcional y efectivo</span>
               </h3>
               <p className="paragraph lg">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad,
-                eligendi? Laboriosam aut magni consectetur esse harum cum
-                repellat officia est.
+                Cubrimos todas las ramas que un proyecto necesita para
+                destacarse de la multitud combinando estrategia, tecnología y
+                creatividad con el objetivo de superar siempre las expectativas
+                de nuestros clientes
               </p>
             </div>
           </div>
           <div className="container-lg">
             <div className="col_info">
-              <h3 className="fw_600 ">
-                Creamos plataformas de sistemas de socios, facturación &
-                e-learnings.
+              <h3 className="fw_600 mb-4">
+                Creamos plataformas de{" "}
+                <span className="c_morado">
+                  sistemas de socios, facturación & e-learnings.
+                </span>
               </h3>
               <p className="paragraph sm">
                 Generamos comprobantes fiscales automatizados por internet o
@@ -97,11 +106,42 @@ export const WebDevelopPage = () => {
                 dirigidas a los principales sistemas operativos como iOS y
                 Android.
               </p>
+              <div>
+                <p className="paragraph sm fw_500 mt-4">
+                  <span>
+                    <i className="c_primary fa-solid fa-plus"></i>
+                  </span>{" "}
+                  Registro fácil y rápido
+                </p>
+                <p className="paragraph sm fw_500">
+                  <span>
+                    <i className="c_primary fa-solid fa-plus"></i>
+                  </span>{" "}
+                  Login seguro
+                </p>
+                <p className="paragraph sm fw_500">
+                  <span>
+                    <i className="c_primary fa-solid fa-plus"></i>
+                  </span>{" "}
+                  Look & feel personalizable
+                </p>
+                <p className="paragraph sm fw_500">
+                  <span>
+                    <i className="c_primary fa-solid fa-plus"></i>
+                  </span>{" "}
+                  Reportes y analítica
+                </p>
+                <p className="paragraph sm fw_500">
+                  <span>
+                    <i className="c_primary fa-solid fa-plus"></i>
+                  </span>{" "}
+                  Donde quieras y cuando quieras
+                </p>
+              </div>
             </div>
           </div>
         </div>
-        <BreakAttach inPage='marketing__page' />
-
+        <BreakAttach inPage="marketing__page" />
       </section>
     </>
   );
