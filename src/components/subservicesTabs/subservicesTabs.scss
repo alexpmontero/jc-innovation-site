@@ -31,6 +31,9 @@
       }
       .item_tabs_group {
         max-width: 125px;
+        z-index: 1;
+        overflow: hidden;
+        position: relative;
         .span_ico_tabs {
           font-size: 1.25rem;
         }
@@ -39,23 +42,39 @@
           margin-top: 1.5rem;
         }
       }
+      
     }
   }
-  .tab-pane{
+  .tab-pane {
     margin-top: 5rem;
-    .content_tabs_group{
-      .box_info_tabs{
+    .content_tabs_group {
+      .box_info_tabs {
         margin-top: 2rem;
       }
-      .box_subinfo_tabs{
+      .box_subinfo_tabs {
         margin-top: 5rem;
-        .fa-solid{
-          font-size: 1.75rem;
+        .ttlsb {
+          position: relative;
+          &::after {
+            content: "";
+            height: 3px;
+            background: #333;
+            max-width: 50px;
+            width: 100%;
+            position: absolute;
+            top: -1rem;
+            left: 0;
+          }
+          &:empty {
+            &::after {
+              display: none;
+            }
+          }
         }
       }
-      .box_infoimgs_tabs{
+      .box_infoimgs_tabs {
         text-align: center;
-        img{
+        img {
           max-height: 500px;
           border-radius: 20px;
         }

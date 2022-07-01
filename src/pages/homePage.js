@@ -107,14 +107,14 @@ export const HomePage = () => {
           </div>
         </div>
 
-        <div className="wrapper_subservices d-none">
+        <div className="wrapper_subservices">
           <div className="content_subservices">
             <div className="container-lg">
               <div className="sec_titular">
                 <div className="row align-items-center drawer_mnsj">
                   <div className="col-md-8">
-                    <div className="">
-                      <h3 className="ttls ttl_section mb-4">
+                    <div className="pdr_2 mb-3">
+                      <h3 className="ttls ttl_section mb-3">
                         ¡Quédate tranquilo! <br />
                         Nosotros nos encargamos de todo
                       </h3>
@@ -125,7 +125,7 @@ export const HomePage = () => {
                     </div>
                   </div>
                   <div className="col-md-4">
-                    <div className="box_options_btns">
+                    <div className="box_options_btns mb-3">
                       <BtnDownload colors="in-color" />
                       <button type="button" className="btn btn-primary ">
                         <span>
@@ -172,8 +172,6 @@ export const HomePage = () => {
 
         <UpcomingEvents />
         
-        <section className="d-none"></section>
-
         <Modal isOpen={modal} toggle={toggle} className="wrapper_modal_home">
           <div className="sec_video_pride">
             <span className="btnclose" onClick={toggle}>

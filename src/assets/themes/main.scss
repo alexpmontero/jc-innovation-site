@@ -1049,7 +1049,7 @@
       text-align: center;
     }
     .box_options_btns {
-      justify-content: center;
+      justify-content: center !important;
     }
   }
   .wrapper_page_about {
@@ -1262,6 +1262,24 @@
   .wrapper_page_contact {
     .contain_bg_data_business .item_contact_head {
       height: 150px;
+    }
+  }
+  .section_tabs {
+    .nav-tabs .nav-link {
+      min-height: 100% !important;
+      padding-top: 0.25rem !important;
+      &::after {
+        bottom: 10px !important;
+      }
+      h6 {
+        margin-top: 0 !important;
+      }
+    }
+    .nav-item {
+      width: 46% !important;
+    }
+    .tab-pane {
+      margin-top: 1.25rem !important;
     }
   }
 }
