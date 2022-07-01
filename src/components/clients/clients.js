@@ -22,12 +22,10 @@ export const Clients = () => {
             src={require("../../assets/imgs/clients/cliente01.png")}
             alt=""
           />
-
           <img
             src={require("../../assets/imgs/clients/cliente02.png")}
             alt=""
           />
-
           <img
             src={require("../../assets/imgs/clients/cliente03.png")}
             alt=""
@@ -37,7 +35,6 @@ export const Clients = () => {
             src={require("../../assets/imgs/clients/cliente04.png")}
             alt=""
           />
-
           <img
             src={require("../../assets/imgs/clients/cliente05.png")}
             alt=""
