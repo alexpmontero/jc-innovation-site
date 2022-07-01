@@ -115,6 +115,18 @@
 
 .wrapper_clients {
   padding: 7rem 0;
+
+  .wrapper_clients_logos {
+    .box_logo_clients {
+      display: flex !important;
+      flex-wrap: wrap;
+      gap: 60px;
+      justify-content: center;
+      img{
+      height: auto;
+      }
+    }
+  }
 }
 
 .wrapper_upcoming {

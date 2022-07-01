@@ -7,7 +7,7 @@ export const BtnDownload = (props) => {
       className={` btn btn-brochure ${
         props.colors}`}
       download="JC Innovation - Brochure de Servicios"
-      href="/servicios-jc-innovation.pdf"
+      href="/JC-Innovation__ServiciosBrochure.pdf"
     >
       <i className="fa-solid fa-download"></i>
       <span>BROCHUR DE SERVICIOS</span>

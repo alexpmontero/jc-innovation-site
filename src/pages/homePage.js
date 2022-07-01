@@ -7,6 +7,7 @@ import { SubservicesTabs } from "../components/subservicesTabs/subservicesTabs";
 import { UpcomingEvents } from "../components/upcomingEvents/upcomingEvents";
 import { BtnDownload } from "../components/btnDownload";
 import { BreakAttach } from "../components/breakAttach";
+import { Clients } from "../components/clients/clients"
 
 import promoVdo from "../assets/video/promovideo.mp4";
 
@@ -149,7 +150,7 @@ export const HomePage = () => {
         <BreakAttach inPage="home__page" />
 
         <div className="wrapper_clients text-center ">
-          <div className="container-lg">
+          <div className="container_am">
             <div className="content_clients">
               <div>
                 <h6 className="ttls ttl_thin mb-4">
@@ -163,10 +164,9 @@ export const HomePage = () => {
                   quienes consideramos parte de nuestra familia.
                 </p>
               </div>
-              <div>
-                <h1>logos</h1>
-              </div>
             </div>
+          <Clients />
+
           </div>
         </div>
 

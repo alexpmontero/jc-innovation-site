@@ -65,14 +65,14 @@ export const Header = () => {
               >
                 <i className="fa-brands fa-instagram"></i>
               </a>
-              <a
+              {/* <a
                 target="_blank"
                 title="Twitter"
                 rel="nofollow noopener noreferrer"
                 href="https://twitter.com/jc_innovation"
               >
                 <i className="fa-brands fa-twitter-square"></i>
-              </a>
+              </a> */}
               <a
                 target="_blank"
                 title="Linkedin"
@@ -81,14 +81,14 @@ export const Header = () => {
               >
                 <i className="fa-brands fa-linkedin"></i>
               </a>
-              <a
+              {/* <a
                 target="_blank"
                 title="Youtube"
                 rel="nofollow noopener noreferrer"
                 href="https://www.youtube.com/channel/UCx0MHsRF0UzEW14iUOS4vOQ"
               >
                 <i className="fa-brands fa-youtube"></i>
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
