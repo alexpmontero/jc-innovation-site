@@ -57,7 +57,7 @@ export const WebDevelopPage = () => {
               </h3>
               <p className="paragraph lg">
                 Creamos plataformas de sistemas de socios, facturación &
-                e-learnings, a la medida de tus necesidades
+                e-learnings y páginas web a la medida de tus necesidades
               </p>
             </div>
           </div>

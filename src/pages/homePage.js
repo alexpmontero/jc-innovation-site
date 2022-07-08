@@ -7,7 +7,7 @@ import { SubservicesTabs } from "../components/subservicesTabs/subservicesTabs";
 import { UpcomingEvents } from "../components/upcomingEvents/upcomingEvents";
 import { BtnDownload } from "../components/btnDownload";
 import { BreakAttach } from "../components/breakAttach";
-import { Clients } from "../components/clients/clients"
+import { Clients } from "../components/clients/clients";
 
 import promoVdo from "../assets/video/promovideo.mp4";
 
@@ -165,13 +165,12 @@ export const HomePage = () => {
                 </p>
               </div>
             </div>
-          <Clients />
-
+            <Clients />
           </div>
         </div>
 
         <UpcomingEvents />
-        
+
         <Modal isOpen={modal} toggle={toggle} className="wrapper_modal_home">
           <div className="sec_video_pride">
             <span className="btnclose" onClick={toggle}>

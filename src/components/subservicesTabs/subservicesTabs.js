@@ -5,7 +5,7 @@ import "./subservicesTabs.scss";
 export const SubservicesTabs = () => {
   const [activeTab, setActiveTab] = useState("1");
   const [itemSubservices, setItemSubservices] = useState([]);
-  
+
   useEffect(() => {
     const contentSubservices = [
       {
@@ -15,10 +15,10 @@ export const SubservicesTabs = () => {
         nameSubservice: "Gestión de eventos",
         infoService:
           "Estamos orientados a satisfacer las necesidades específicas de tu marca, servicio, producto y/o evento de una manera única y creativa, cuidando cada detalle.",
-        subTitle1: "Logistica completa",
+        subTitle1: "Logística completa",
         infoTitulo1:
           "Los eventos empresariales pueden ser un éxito o fracaso todo depende de la organización del mismo.",
-        subTitle2: "Escenarios y stands",
+        subTitle2: "Escenografía y stands",
         infoTitulo2:
           "Eventos para público externo que permite a las empresas mostrar y ofrecer sus productos y servicios.",
       },
@@ -26,10 +26,10 @@ export const SubservicesTabs = () => {
         id: 2,
         ico: "fa-solid fa-plane-up",
         picture: require("../../assets/imgs/subservices/transporte.png"),
-        nameSubservice: "Transporte terrestre y aereo",
+        nameSubservice: "Transporte terrestre y aéreo",
         infoService:
           "Realizamos la operación y logística de transporte para toda persona o empresa que requiera tarifas preferenciales a nivel nacional e internacional, con acceso inmediato y haciendo de su viaje, la mejor experiencia abordo. ",
-        subTitle1: "Logística desde el inicio",
+        subTitle1: "Tu viaje desde casa",
         infoTitulo1:
           "La transportación terrestre y aérea requiere una logística a través de una planificación de rutas eficientes y eficaces",
         // subTitle2: "t2 -lorem ipsun carted lois defeclt asoem calemana",
@@ -46,9 +46,9 @@ export const SubservicesTabs = () => {
         subTitle1: "Comodidad y confort",
         infoTitulo1:
           "Hacemos que cada experiencia sea digna de memorar dentro de los mejores complejos hoteleros",
-        // subTitle2: "t2 -lorem ipsun carted lois defeclt asoem calemana",
-        // infoTitulo2:
-        //   "vvv - Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi ",
+        subTitle2: "Oferta gastronómica ",
+        infoTitulo2:
+          "Seduce a tus invitados con exquisitos platos y maridajes perfectos en medio de una decoración especial..",
       },
       {
         id: 4,
@@ -71,9 +71,9 @@ export const SubservicesTabs = () => {
         nameSubservice: "Personal bilingüe",
         infoService:
           "Sabemos del mundo globalizado en el que vivimos, es por ello que contamos con el personal bilingüe capacitado para una atención amable, cordial y sobre todo humana para tus invitados internacionales.",
-        subTitle1: "Lorem title Upsom",
+        subTitle1: "Comunicación sin limites",
         infoTitulo1:
-          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, animi consectetur adipisicing!",
+          "Contamos con un equipo con el uso apropiado de los idiomas y la facilidad para expresarse por escrito correctamente.",
         // subTitle2: "t2 -lorem ipsun carted lois defeclt asoem calemana",
         // infoTitulo2:
         //   "vvv - Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi ",
@@ -82,7 +82,7 @@ export const SubservicesTabs = () => {
         id: 6,
         ico: "fa-solid fa-video",
         picture: require("../../assets/imgs/subservices/produccion.png"),
-        nameSubservice: "Producción y posproducción",
+        nameSubservice: "Producción y postproducción",
         infoService:
           "También realizamos videos corporativos, de marketing, publicidad, presentación de productos, animaciones para redes sociales y mucho más, todo esto lo podemos transmitir dentro de tu evento o de forma digital.",
         subTitle1: "¡Luces, cámara y acción!",
@@ -99,7 +99,7 @@ export const SubservicesTabs = () => {
         picture: require("../../assets/imgs/subservices/tour.png"),
         nameSubservice: "Tour de acompañantes",
         infoService:
-          "Nuestrios guías ofrecen una experiencia única al facilitar direcciones y comentarios sobre atracciones turísticas, culturales, históricas, y arqueológicas del lugar de tu evento.",
+          "Nuestros guías ofrecen una experiencia única al facilitar direcciones y comentarios sobre atracciones turísticas, culturales, históricas, y arqueológicas del lugar de tu evento.",
         subTitle1: "Comunicación total",
         infoTitulo1:
           "Trabajamos con un amplio personal con dominio de diversos idiomas que fungen como guías turísticos durante tu evento para los acompañantes de tus invitados.",

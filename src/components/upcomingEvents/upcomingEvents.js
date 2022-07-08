@@ -96,25 +96,25 @@ export const UpcomingEvents = () => {
             <div className="item_upcoming">
               <img src={itemUpcoming02} alt="PRÓXIMOS EVENTOS JC INNOVATION" />
             </div>
-            <div className="item_upcoming">
+            <div className="item_upcoming is_min">
               <img src={itemUpcoming03} alt="PRÓXIMOS EVENTOS JC INNOVATION" />
             </div>
-            <div className="item_upcoming">
+            <div className="item_upcoming is_min">
               <img src={itemUpcoming04} alt="PRÓXIMOS EVENTOS JC INNOVATION" />
             </div>
-            <div className="item_upcoming">
+            <div className="item_upcoming is_min">
               <img src={itemUpcoming05} alt="PRÓXIMOS EVENTOS JC INNOVATION" />
             </div>
-            <div className="item_upcoming">
+            <div className="item_upcoming is_min">
               <img src={itemUpcoming06} alt="PRÓXIMOS EVENTOS JC INNOVATION" />
             </div>
-            <div className="item_upcoming">
+            <div className="item_upcoming is_min">
               <img src={itemUpcoming07} alt="PRÓXIMOS EVENTOS JC INNOVATION" />
             </div>
-            <div className="item_upcoming">
+            <div className="item_upcoming is_min">
               <img src={itemUpcoming08} alt="PRÓXIMOS EVENTOS JC INNOVATION" />
             </div>
-            <div className="item_upcoming">
+            <div className="item_upcoming is_min">
               <img src={itemUpcoming09} alt="PRÓXIMOS EVENTOS JC INNOVATION" />
             </div>
           </Carousel>

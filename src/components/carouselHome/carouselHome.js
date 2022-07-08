@@ -101,8 +101,8 @@ export const CarouselHome = () => {
           <h3 className="mt-3">Calidad</h3>
           <p className="paragraph sm">
             La satisfacción de nuestros clientes es importante, por eso
-            mantenemos una estandarización para que cada producto o servicio que
-            ofrecemos se único.
+            mantenemos una estandarización para que todos nuestros productos y
+            servicios sean únicos.
           </p>
         </div>
       </Carousel>

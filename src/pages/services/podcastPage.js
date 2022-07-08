@@ -1,7 +1,7 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
 import { CarouselServices } from "../../components/carouselServices";
-import {BreakAttach} from '../../components/breakAttach'
+import { BreakAttach } from "../../components/breakAttach";
 
 import bgPdcstHead from "../../assets/imgs/servicios/podcast/bg_pdcst_head.png";
 import iconsPodcast from "../../assets/imgs/podcast.png";
@@ -14,9 +14,9 @@ export const PodcastPage = () => {
   useEffect(() => {
     const scrollToTop = () => {
       window.scrollTo(0, 0);
-    }
-    scrollToTop()
-  })
+    };
+    scrollToTop();
+  });
   return (
     <>
       <Helmet>
@@ -87,7 +87,7 @@ export const PodcastPage = () => {
                     <strong className="fw_500 ">
                       Contamos con cabinas profesionales
                     </strong>{" "}
-                    para una grabación precencial totalmente profesional, o
+                    para una grabación presencial totalmente profesional o
                     podemos gestionar su grabación desde vía remota sin
                     sacrificar calidad auditiva.
                   </p>
@@ -159,7 +159,7 @@ export const PodcastPage = () => {
             </div>
           </div>
         </div>
-        <BreakAttach inPage='podcast__page' />
+        <BreakAttach inPage="podcast__page" />
       </section>
     </>
   );

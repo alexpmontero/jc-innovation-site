@@ -41,16 +41,11 @@ export const StreamingPage = () => {
                           Ponencias en vivo
                         </p>
                       </div>
+
                       <div className="col-md-6">
                         <p className="paragraph sm">
                           <i className="fa-solid c_primary fa-plus"></i>{" "}
-                          Visualización de trabajos libres
-                        </p>
-                      </div>
-                      <div className="col-md-6">
-                        <p className="paragraph sm">
-                          <i className="fa-solid c_primary fa-plus"></i>{" "}
-                          Comunicarte con los demás invitados y más.
+                          Comunícate sin pretextos
                         </p>
                       </div>
                     </div>
@@ -93,7 +88,7 @@ export const StreamingPage = () => {
                 Nos adaptamos a tu evento
               </h3>
               <p className="paragraph lg">
-                Transmitimos eventos físicos como congresos, ferias y paneles;
+                Transmitimos eventos presenciales como congresos, ferias y paneles;
                 así como webinars y eventos digitales.
               </p>
             </div>
@@ -140,12 +135,6 @@ export const StreamingPage = () => {
                   <i className="c_primary fa-solid fa-plus"></i>
                 </span>{" "}
                 Duración indefinida
-              </p>
-              <p className="paragraph sm fw_500">
-                <span>
-                  <i className="c_primary fa-solid fa-plus"></i>
-                </span>{" "}
-                Todos los dispositivos
               </p>
               <p className="paragraph sm fw_500">
                 <span>

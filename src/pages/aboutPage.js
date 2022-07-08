@@ -39,8 +39,7 @@ export const AboutPage = () => {
               memorables
             </h3>
             <p className="paragraph lg">
-              Somos una empresa con más de 15 años de experiencia en tecnología
-              e innovación para eventos y soluciones digitales
+            “Somos una empresa con más de 15 años de experiencia en organización de congresos, eventos y soluciones digitales
             </p>
             <div className="text-center">
               <Link to="/contacto" className="btn btn-primary mt-4">

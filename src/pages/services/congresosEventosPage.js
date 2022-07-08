@@ -61,7 +61,7 @@ export const CongresosEventosPage = () => {
                   <p className="paragraph sm cite mt-5">
                     Buscamos la mejor opción en tarifas hoteleras, apoyos
                     gubernamentales y más, para asegurar el objetivo de tu
-                    marcado.
+                    marca.
                   </p>
                 </div>
               </div>
@@ -92,11 +92,11 @@ export const CongresosEventosPage = () => {
                   </h6>
                   <h3 className="ttls ttl_section mb-5 c_primary">VIRTUALES</h3>
                   <p className="paragraph sm">
-                    Somos expertos realizando cualquier tipo de evento; desde
-                    eventos corporativos, conferencias y congresos, hasta
-                    lanzamientos de nuevos productos.
+                    No importa la modalidad, nosotros estamos preparados para
+                    cumplir con el objetivo de los eventos.
                   </p>
-                  <p className="paragraph sm cite mt-5">
+                  <hr />
+                  {/* <p className="paragraph sm cite mt-5">
                     Organizamos los mejores eventos y le damos la importancia
                     que se merece, no importa el tamaño de tu Congreso.
                   </p>
@@ -104,19 +104,25 @@ export const CongresosEventosPage = () => {
                     Buscamos la mejor opción en tarifas hoteleras, apoyos
                     gubernamentales y más, para asegurar el objetivo de tu
                     marcado.
-                  </p>
+                  </p> */}
                   <div className="mt-5">
-                    <p className="paragraph sm">
-                      <i className="fa-solid c_primary fa-plus"></i> Ponencias
-                      en vivo
+                    <p className="paragraph sm mb-4">
+                      <i className="fa-solid c_primary fa-plus"></i> Registro en
+                      línea
                     </p>
-                    <p className="paragraph sm">
-                      <i className="fa-solid c_primary fa-plus"></i>{" "}
-                      Visualización de trabajos libres
+                    <p className="paragraph sm mb-4">
+                      <i className="fa-solid c_primary fa-plus"></i> Streaming
                     </p>
-                    <p className="paragraph sm">
-                      <i className="fa-solid c_primary fa-plus"></i> Comunicarte
-                      con los demás invitados y más.
+                    <p className="paragraph sm mb-4">
+                      <i className="fa-solid c_primary fa-plus"></i> Expo
+                      comercial
+                    </p>
+                    <p className="paragraph sm mb-4">
+                      <i className="fa-solid c_primary fa-plus"></i> Traducción
+                      simultanea
+                    </p>
+                    <p className="paragraph sm mb-4">
+                      <i className="fa-solid c_primary fa-plus"></i> Chat
                     </p>
                   </div>
                 </div>
@@ -159,7 +165,7 @@ export const CongresosEventosPage = () => {
                     </li>
                     <li>
                       <p className="paragraph sm">
-                        Transportación área y terrestre
+                        Transportación aérea y terrestre
                       </p>
                     </li>
                   </ul>
@@ -180,7 +186,7 @@ export const CongresosEventosPage = () => {
               </div>
               <div className="row_compare_events">
                 <div className="box_details_events ttl__compare">
-                  <h4 className="fw_500 c_morado ">Durante del evento</h4>
+                  <h4 className="fw_500 c_morado ">Durante el evento</h4>
                 </div>
                 <div className="box_details_events">
                   <ul>
@@ -211,6 +217,9 @@ export const CongresosEventosPage = () => {
                     <li>
                       <p className="paragraph sm">Proyección</p>
                     </li>
+                    <li>
+                      <p className="paragraph sm">Catering</p>
+                    </li>
                   </ul>
                 </div>
                 <div className="box_details_events">
@@ -227,6 +236,9 @@ export const CongresosEventosPage = () => {
                     <li>
                       <p className="paragraph sm">Personal bilingüe</p>
                     </li>
+                    <li>
+                      <p className="paragraph sm">Soporte en línea</p>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -237,12 +249,25 @@ export const CongresosEventosPage = () => {
                 <div className="box_details_events">
                   <ul>
                     <li>
-                      <p className="paragraph sm">Catering </p>
+                      <p className="paragraph sm">Envío de constancias </p>
+                    </li>
+                    <li>
+                      <p className="paragraph sm">Entrega de métricas </p>
                     </li>
                   </ul>
                 </div>
                 <div className="box_details_events">
-                  <p className="paragraph sm">-</p>
+                  <ul>
+                    <li>
+                      <p className="paragraph sm">Envío de constancias </p>
+                    </li>
+                    <li>
+                      <p className="paragraph sm">Entrega de métricas </p>
+                    </li>
+                    <li>
+                      <p className="paragraph sm">Descarga de constancias </p>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>

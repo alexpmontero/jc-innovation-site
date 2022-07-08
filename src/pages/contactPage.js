@@ -25,7 +25,7 @@ export const ContactPage = () => {
                 ¿Tienes una idea para tu evento?
               </h3>
               <p className="paragraph lg">
-                Si tiene alguna duda o comentario, ¡contáctanos! Estamos seguros
+                Si tienes alguna duda o comentario, ¡contáctanos! Estamos seguros
                 que podemos ayudarte en los proyectos que tienes en mente.
               </p>
             </div>
@@ -40,8 +40,8 @@ export const ContactPage = () => {
                       <i className="fa-regular fa-envelope"></i>
                     </h1>
                     <h5>
-                      <a href="mailto:Jcinnovations@correo.com">
-                        Jcinnovations@correo.com
+                      <a href="mailto:contacto@jc-innovation.com">
+                        contacto@jc-innovation.com
                       </a>
                     </h5>
                   </div>
@@ -79,8 +79,7 @@ export const ContactPage = () => {
               <div className="col-sm-6">
                 <div className="sec_form_contact">
                   <h3 className="ttls ttl_section ">
-                    Únase a nosotros hoy y permítanos ayudarlo a poner en marcha
-                    tu idea.
+                  Únete a nosotros y permítenos ayudarte a poner en marcha tu idea.
                   </h3>
                   <form>
                     <div className="mb-3">

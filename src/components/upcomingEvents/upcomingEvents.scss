@@ -1,8 +1,9 @@
-// .wrapper_upcoming .content_upcoming .BrainhubCarousel__arrows {
-//   position: absolute;
-//   z-index: 1;
-//   bottom: 50px;
-//   padding: 25px;
-//   border-radius: 6px;
-//   background: #ffffff;
-// }
+.wrapper_upcoming {
+  .item_upcoming{
+    &.is_min{
+      img{
+        max-width: 90%;
+      }
+    }
+  }
+}

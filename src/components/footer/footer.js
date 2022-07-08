@@ -53,7 +53,7 @@ export const Footer = () => {
                   <img src={LogoOficial} alt="JC Innovation" />
                 </div>
                 <h2 className="mt-1">
-                  Únase a nosotros hoy y permítanos ayudarlo a unir personas.
+                Seamos parte del mismo equipo y reunamos lo imposible
                 </h2>
                 <div className="sec_links_socials">
                   <div className="socials">
@@ -124,8 +124,8 @@ export const Footer = () => {
                   <span>
                     <i className="fa-regular fa-envelope"></i>
                   </span>
-                  <a href="mailto:Jcinnovations@correo.com">
-                    Jcinnovations@correo.com
+                  <a href="mailto:contacto@jc-innovation.com">
+                    contacto@jc-innovation.com
                   </a>
                 </p>
               </div>
