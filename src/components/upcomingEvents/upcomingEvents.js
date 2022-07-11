@@ -6,10 +6,10 @@ import Carousel, {
 import "@brainhubeu/react-carousel/lib/style.css";
 import "./upcomingEvents.scss";
 
-import itemUpcoming01 from "../../assets/imgs/upcoming-events/prox1.png";
-import itemUpcoming02 from "../../assets/imgs/upcoming-events/prox2.png";
-import itemUpcoming03 from "../../assets/imgs/upcoming-events/prox3.png";
-import itemUpcoming04 from "../../assets/imgs/upcoming-events/prox4.png";
+import itemUpcoming01 from "../../assets/imgs/upcoming-events/prox1.jpg";
+import itemUpcoming02 from "../../assets/imgs/upcoming-events/prox2.jpg";
+import itemUpcoming03 from "../../assets/imgs/upcoming-events/prox3.jpg";
+import itemUpcoming04 from "../../assets/imgs/upcoming-events/prox4.jpg";
 import itemUpcoming05 from "../../assets/imgs/upcoming-events/prox5.png";
 import itemUpcoming06 from "../../assets/imgs/upcoming-events/prox6.png";
 import itemUpcoming07 from "../../assets/imgs/upcoming-events/prox7.png";
@@ -96,25 +96,25 @@ export const UpcomingEvents = () => {
             <div className="item_upcoming">
               <img src={itemUpcoming02} alt="PRÓXIMOS EVENTOS JC INNOVATION" />
             </div>
-            <div className="item_upcoming is_min">
+            <div className="item_upcoming">
               <img src={itemUpcoming03} alt="PRÓXIMOS EVENTOS JC INNOVATION" />
             </div>
-            <div className="item_upcoming is_min">
+            <div className="item_upcoming">
               <img src={itemUpcoming04} alt="PRÓXIMOS EVENTOS JC INNOVATION" />
             </div>
-            <div className="item_upcoming is_min">
+            <div className="item_upcoming">
               <img src={itemUpcoming05} alt="PRÓXIMOS EVENTOS JC INNOVATION" />
             </div>
-            <div className="item_upcoming is_min">
+            <div className="item_upcoming">
               <img src={itemUpcoming06} alt="PRÓXIMOS EVENTOS JC INNOVATION" />
             </div>
-            <div className="item_upcoming is_min">
+            <div className="item_upcoming">
               <img src={itemUpcoming07} alt="PRÓXIMOS EVENTOS JC INNOVATION" />
             </div>
-            <div className="item_upcoming is_min">
+            <div className="item_upcoming">
               <img src={itemUpcoming08} alt="PRÓXIMOS EVENTOS JC INNOVATION" />
             </div>
-            <div className="item_upcoming is_min">
+            <div className="item_upcoming">
               <img src={itemUpcoming09} alt="PRÓXIMOS EVENTOS JC INNOVATION" />
             </div>
           </Carousel>
