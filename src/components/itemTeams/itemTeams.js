@@ -9,14 +9,14 @@ export const ItemTeams = () => {
       {
         id: 1,
         photo: require("../../assets/imgs/teams/jessica-becerra.png"),
-        position: "CEO - Chief Executive Officer",
+        position: "CD - Commercial Director",
         name: "JESSICA A. BECERRA",
         email: "jessica@jc-innovation.com",
       },
       {
         id: 2,
         photo: require("../../assets/imgs/teams/omar-espinoza.png"),
-        position: "COO - Chief Operating Officer",
+        position: "CEO - Chief Executive Officer",
         name: "OMAR ESPINOSA",
         email: "omar@jc-innovation.com",
       },

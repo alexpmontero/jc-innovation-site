@@ -10,7 +10,7 @@ export const BtnDownload = (props) => {
       href="/JC-Innovation__ServiciosBrochure.pdf"
     >
       <i className="fa-solid fa-download"></i>
-      <span>BROCHUR DE SERVICIOS</span>
+      <span>BROCHURE DE SERVICIOS</span>
     </a>
   );
 };
